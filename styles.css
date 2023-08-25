@@ -1,14 +1,99 @@
-  body {
-    width: 800px;
-    margin: 10px auto;
-    padding: 20px 20px 20px 20px;
-  
-  }
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Asap:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-  #Deca1, #Deca2, #Deca3, #Mat0, #Mat1, #Mat2, #Mat3, #Mat4, #Mat5, #Mat6, #P1, #P2, #p1-tab, #p2-tab {
-    display: none;
-  }
+:root {
+  --primary-color: #002583;
+  --secondary-color: #3758a2;
+  --accent-color: #ff7f2d;
+  --background-color-1: #f9fcff;
+  --background-color-2: #e8f5ff;
+  --background-color-3: #bac9fd;
 
-  img{
-    width: 200px;
-  }
+  --white-color: #fff;
+
+  --primary-font-family: "Asap", sans-serif;
+  --secondary-font-family: "Anton", sans-serif;
+  --font-size: 20px;
+  --primary-font-color: #4a4b4b;
+}
+
+body {
+  font-family: var(--primary-font-family);
+  font-size: var(--font-size);
+  font-weight: 400;
+  color: var(--primary-font-color);
+}
+
+h1,
+h2 {
+  font-family: var(--secondary-font-family);
+}
+
+h1 {
+  color: var(--white-color);
+  text-shadow: -1px 1px 0 var(--secondary-color), 1px 1px 0 var(--secondary-color), 1px -1px 0 var(--secondary-color),
+    -1px -1px 0 var(--secondary-color);
+}
+
+h2 {
+  color: var(--primary-color);
+}
+
+#miSelect {
+  border: 2px solid var(--primary-color);
+}
+
+.btn:disabled {
+  background-color: var(--background-color-3) !important;
+  color: var(--primary-font-color) !important;
+}
+
+.btn:disabled span {
+  font-family: var(--secondary-font-family);
+}
+
+.btn:disabled img {
+  width: 25px;
+  height: auto;
+}
+
+.btn-orange {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  border: 2px solid var(--accent-color);
+}
+
+.btn-orange:hover,
+.btn-orange:focus {
+  background-color: var(--white-color) !important;
+  color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+}
+
+#espacio1 {
+  background-color: var(--background-color-1);
+}
+
+.img-section {
+  background-color: var(--background-color-2);
+}
+
+.destacado {
+  background-color: var(--primary-color);
+}
+
+#Deca1,
+#Deca2,
+#Deca3,
+#Mat0,
+#Mat1,
+#Mat2,
+#Mat3,
+#Mat4,
+#Mat5,
+#Mat6,
+#P1,
+#P2,
+#p1-tab,
+#p2-tab {
+  display: none;
+}
