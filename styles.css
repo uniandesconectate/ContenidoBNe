@@ -73,6 +73,14 @@ h2 {
   background-color: var(--background-color-1);
 }
 
+.img-section {
+  background-color: var(--background-color-2);
+}
+
+.destacado {
+  background-color: var(--primary-color);
+}
+
 #Deca1,
 #Deca2,
 #Deca3,
@@ -88,8 +96,4 @@ h2 {
 #p1-tab,
 #p2-tab {
   display: none;
-}
-
-img {
-  width: 200px;
 }
