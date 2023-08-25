@@ -69,6 +69,16 @@ h2 {
   border-color: var(--accent-color) !important;
 }
 
+a {
+  background-color: var(--white-color);
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: calc(var(--font-size) - 4px);
+  display: inline-block;
+}
+
 #espacio1 {
   background-color: var(--background-color-1);
 }
@@ -79,6 +89,28 @@ h2 {
 
 .destacado {
   background-color: var(--primary-color);
+}
+
+.nav-tabs {
+  border: 0px;
+}
+
+.nav-link {
+  background-color: var(--background-color-3) !important;
+  color: var(--primary-font-color) !important;
+}
+
+.nav-link.active {
+  background-color: var(--accent-color) !important;
+  color: var(--white-color) !important;
+}
+
+.icon-p {
+  width: 77px;
+}
+
+.card {
+  border: 2px solid var(--accent-color);
 }
 
 #Deca1,
@@ -93,7 +125,13 @@ h2 {
 #Mat6,
 #P1,
 #P2,
+#P3,
+#P4,
+#P5,
 #p1-tab,
-#p2-tab {
+#p2-tab,
+#p3-tab,
+#p4-tab,
+#p5-tab {
   display: none;
 }
