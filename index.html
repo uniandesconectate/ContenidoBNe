@@ -1,0 +1,148 @@
+<html>
+<head>
+  <title> Título página </title> 
+  <meta charset="utf-8">
+  <script type="text/javascript" src="functions.js"></script>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>  
+<body>
+<script type="text/javascript" src="data.json"></script>
+
+<div>
+<label for="miSelect">Código estudiante:</label>
+<input type='text' class='form-control' name='miSelect' id='miSelect' data-min-length='6' 
+placeholder="Escriba el código" required="true" onchange="mostrarDatos(this.selectedIndex)">
+
+</div>
+<br>
+
+<!-- espacio decanatura -->
+<div>
+  <div class="card-body">
+    <h2 class="card-title">Decanatura</h2>
+    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nesciunt tempore 
+      laudantium obcaecati iusto aliquam officia labore quibusdam sunt nobis minima, voluptatum 
+      suscipit amet optio magnam commodi sed corrupti ipsam.</p>
+  </div>
+  <br>
+  <div id="Deca1" class="card-body">
+    <h4 class="card-title">Sección 1</h4>
+    <p class="card-text">Este es el contenido de Deca 1</p>
+  </div>
+  <div id="Deca2" class="card-body">
+    <h4 class="card-title">Sección 2</h4>
+    <p class="card-text">Este es el contenido de Deca 2</p>
+  </div>
+  <div id="Deca3" class="card-body">
+    <h4 class="card-title">Sección 3</h4>
+    <p class="card-text">Este es el contenido de Deca 3</p>
+  </div>
+</div>
+<hr>
+<!-- espacio matemáticas -->
+<div>
+  <div id="espacio1" class="card-body">
+    <h2>Matemáticas</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim rem accusamus animi ducimus ea at,
+       omnis nesciunt voluptatem vel quibusdam reiciendis aliquam consequuntur minus illum vero cupiditate nam, 
+       architecto praesentium.</p>
+  </div>
+  <div id="Mat0" class="card-body">
+    <h4 class="card-title">Contenido matemáticas 0</h4>
+    <table class="table">
+      <tr>
+        <td><img src="" / id="imagen0"></td>
+        <td>Texto Mat0</td>
+      </tr>
+    </table>
+  </div>
+  <div id="Mat1" class="card-body">
+    <h4 class="card-title">Contenido matemáticas 1</h4>
+    <table class="table">
+      <tr>
+        <td><img src="" / id="imagen1"></td>
+        <td>Texto Mat1</td>
+      </tr>
+    </table>
+  </div>
+  <div id="Mat2" class="card-body">
+    <h4 class="card-title">Contenido matemáticas 2</h4>
+    <table class="table">
+      <tr>
+        <td><img src="" / id="imagen2"></td>
+        <td>Texto Mat2</td>
+      </tr>
+    </table>
+  </div>
+  <div id="Mat3" class="card-body">
+    <h4 class="card-title">Contenido matemáticas 3</h4>
+    <table class="table">
+      <tr>
+        <td><img src="" / id="imagen3"></td>
+        <td>Texto Mat3</td>
+      </tr>
+    </table>
+  </div>
+  <div id="Mat4" class="card-body">
+    <h4 class="card-title">Contenido matemáticas 4</h4>
+    <table class="table">
+      <tr>
+        <td><img src="" / id="imagen4"></td>
+        <td>Texto Mat4</td>
+      </tr>
+    </table>
+  </div>
+  <div id="Mat5" class="card-body">
+    <h4 class="card-title">Contenido matemáticas 5</h4>
+    <table class="table">
+      <tr>
+        <td><img src="" / id="imagen5"></td>
+        <td>Texto Mat5</td>
+      </tr>
+    </table>
+  </div>
+  <div id="Mat6" class="card-body">
+    <h4 class="card-title">Contenido matemáticas 6</h4>
+    <table class="table">
+      <tr>
+        <td><img src="" / id="imagen6"></td>
+        <td>Texto Mat6</td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="p1-tab" data-bs-toggle="tab" data-bs-target="#p1-tab-pane" type="button" role="tab" aria-controls="p1-tab-pane" aria-selected="true">P1</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="p2-tab" data-bs-toggle="tab" data-bs-target="#p2-tab-pane" type="button" role="tab" aria-controls="p2-tab-pane" aria-selected="false">P2</button>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade" id="p1-tab-pane" role="tabpanel" aria-labelledby="p1-tab">
+    <div id="P1" class="card-body">
+      <h4 class="card-title">Contenido de P1</h4>
+      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nesciunt tempore 
+        laudantium obcaecati iusto aliquam officia labore quibusdam sunt nobis minima, voluptatum 
+        suscipit amet optio magnam commodi sed corrupti ipsam.</p>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="p2-tab-pane" role="tabpanel" aria-labelledby="p2-tab">
+    <div id="P2" class="card-body">
+      <h4 class="card-title">Contenido de P2</h4>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo dolore laudantium sit aperiam molestiae, 
+        totam nisi dolorum in officia fugiat pariatur, iure repudiandae error ex accusantium soluta. Corporis, 
+        temporibus in?</p>
+    </div>
+  </div>
+</div>
+<br>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
