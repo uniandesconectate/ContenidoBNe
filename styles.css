@@ -42,6 +42,10 @@ h2 {
   border: 2px solid var(--primary-color);
 }
 
+.img-fluid {
+  min-width: 100%;
+}
+
 .ms-n1 {
   margin-left: -30px !important;
   z-index: 6 !important;
