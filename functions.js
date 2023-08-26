@@ -2,26 +2,22 @@
 
 // Función para mostrar los datos correspondientes al cambio en el select
 function mostrarDatos() {
-  debugger;
   const selectElement = document.getElementById("miSelect");
   const selectedId = selectElement.value;
 
-  console.log(selectElement);
-  console.log(selectedId);
-
   // Busca el elemento en los datos del JSON
   const selectedData = data.find((item) => item.id === selectedId);
-  console.log(selectedData);
 
   // Mostrar contenido correspondiente a Decanatura
   document.getElementById("Deca1").style.display = selectedData.Deca1 === "1" ? "block" : "none";
   document.getElementById("Deca2").style.display = selectedData.Deca2 === "1" ? "block" : "none";
   document.getElementById("Deca3").style.display = selectedData.Deca3 === "1" ? "block" : "none";
+  document.getElementById("Deca4").style.display = selectedData.Deca3 === "1" ? "block" : "none";
 
   // Mostrar contenido correspondiente a Matemáticas
   for (let i = 0; i <= 6; i++) {
     document.getElementById(`Mat${i}`).style.display = selectedData.Mat === `${i}` ? "block" : "none";
-    document.getElementById(`imagen${i}`).src = `img/foto${selectedData.imagen}.png`;
+    document.getElementById(`imagen${i}`).src = `img/foto${selectedData.imagen}.svg`;
   }
 
   // Mostrar contenido correspondiente a P1 y P2
