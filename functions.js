@@ -17,7 +17,7 @@ function mostrarDatos() {
   // Mostrar contenido correspondiente a Matemáticas
   for (let i = 0; i <= 6; i++) {
     document.getElementById(`Mat${i}`).style.display = selectedData.Mat === `${i}` ? "block" : "none";
-    document.getElementById(`imagen${i+1}`).src = `img/foto${selectedData.imagen}.svg`;
+    document.getElementById(`imagen${i}`).src = `img/foto${selectedData.imagen}.svg`;
   }
 
   // Mostrar contenido correspondiente a P1 y P2
