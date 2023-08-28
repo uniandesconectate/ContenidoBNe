@@ -166,6 +166,11 @@ a:hover {
 #p2-tab,
 #p3-tab,
 #p4-tab,
-#p5-tab {
+#p5-tab,
+#navItemP1,
+#navItemP2,
+#navItemP3,
+#navItemP4,
+#navItemP5 {
   display: none;
 }
