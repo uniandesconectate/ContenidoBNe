@@ -16,7 +16,7 @@ function mostrarDatos() {
 
   // Mostrar contenido correspondiente a Matemáticas
   for (let i = 0; i <= 6; i++) {
-    document.getElementById(`Mat${i}`).style.display = selectedData.Mat === `${i}` ? "block" : "none";
+    document.getElementById(`Mat${i}`).style.display = selectedData.Mat === `${i+1}` ? "block" : "none";
     document.getElementById(`imagen${i}`).src = `img/foto${selectedData.imagen}.svg`;
   }
 
