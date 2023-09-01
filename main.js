@@ -1,4 +1,59 @@
-// functions.js
+window.addEventListener("DOMContentLoaded", () => {
+  const today = getAndFormatDate();
+  const weeksData = getWeeksData();
+  compareDate(today, weeksData);
+});
+
+// obtner la fecha actual y formatearla
+async function getAndFormatDate() {
+  const today = new Date();
+  let dd = String(today.getDate()).padStart(2, "0");
+  let mm = String(today.getMonth() + 1).padStart(2, "0"); //Enero es 0!
+  let yyyy = today.getFullYear();
+  let date = dd + "/" + mm + "/" + yyyy;
+  return date;
+}
+
+// obtener los datos del JSON
+async function getWeeksData() {
+  let url = "semanas.json";
+  let response = await fetch(url);
+  const weeksData = await response.json();
+  return weeksData;
+}
+
+// Función para comparar la fecha actual con las fechas de inicio y fin de cada semana, activar los botones y cambiar las url
+function compareDate(today, weeksData) {
+  const lenght = Object.keys(weeksData).length;
+  for (let i = 1; i <= lenght; i++) {
+    if (weeksData[i].fechaInicio === today) {
+      let element = "btnInicio" + i;
+      activeButtons(element);
+      replaceUrl(weeksData[i].cuestionarios.urlInicio, element);
+    }
+    if (weeksData[i].fechaFin === today) {
+      let element = "btnFin" + i;
+      activeButtons(element);
+      replaceUrl(weeksData[i].cuestionarios.urlFin, element);
+    }
+  }
+}
+
+// Función para activar los botones de inicio y fin de semana
+function activeButtons(element) {
+  let btn = document.getElementById(element);
+  if (btn) {
+    btn.removeAttribute("disabled");
+  }
+}
+
+// Función para cambiar la url del botón pre quiz y quiz
+function replaceUrl(url, element) {
+  let btn = document.getElementById(element);
+  if (btn) {
+    btn.setAttribute("href", url);
+  }
+}
 
 // Función para mostrar los datos correspondientes al cambio en el select
 function mostrarDatos() {

@@ -1,0 +1,34 @@
+{
+  "1": {
+    "fechaInicio": "31/08/2023",
+    "fechaFin": "31/08/2023",
+    "cuestionarios": {
+      "urlInicio": "https://www.google.com/",
+      "urlFin": "https://uniandes.edu.co/"
+    }
+  },
+  "2": {
+    "fechaInicio": "",
+    "fechafin": "",
+    "cuestionarios": {
+      "urlInicio": "",
+      "urlFin": ""
+    }
+  },
+  "3": {
+    "fechaInicio": "",
+    "fechafin": "",
+    "cuestionarios": {
+      "urlInicio": "",
+      "urlFin": ""
+    }
+  },
+  "4": {
+    "fechaInicio": "",
+    "fechafin": "",
+    "cuestionarios": {
+      "urlInicio": "",
+      "urlFin": ""
+    }
+  }
+}
