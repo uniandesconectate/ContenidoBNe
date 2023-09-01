@@ -26,9 +26,6 @@ function getSeccionData(seccion, today) {
       seccionesData = data;
       const seccionData = seccionesData[seccion];
       compareDate(today, seccionData);
-    })
-    .catch((error) => {
-      console.error(`${error}`);
     });
 }
 
@@ -39,11 +36,11 @@ function compareDate(today, weeksData) {
     let fechaInicio = formatDate(weeksData[i].fechaInicio);
     let fechaFin = formatDate(weeksData[i].fechaFin);
     if (fechaInicio <= today) {
-      activeButtons(i);
+      activeButtons(i, "Ini");
       replaceUrl(weeksData[i].cuestionarios.urlInicio, i, "Ini");
     }
     if (fechaFin <= today) {
-      activeButtons(i);
+      activeButtons(i, "Fin");
       replaceUrl(weeksData[i].cuestionarios.urlFin, i, "Fin");
     }
   }
@@ -56,8 +53,8 @@ function formatDate(dateString) {
 }
 
 // Función para activar los botones de inicio y fin de semana
-function activeButtons(id) {
-  let element = `btnSemana${id}`;
+function activeButtons(id, elem) {
+  let element = `btn${elem}Sem${id}`;
   let btn = document.getElementById(element);
   if (btn.classList.contains("disabled")) {
     btn.classList.remove("disabled");
@@ -75,6 +72,19 @@ function replaceUrl(url, id, elem) {
   }
 }
 
+function changeImg(sem) {
+  const selectElement = document.getElementById("miSelect");
+  const selectedId = selectElement.value;
+  // Busca el elemento en los datos del JSON
+  const selectedData = data.find((item) => item.id === selectedId);
+  const semIni = `S${sem}Inicio`;
+  const semFin = `S${sem}Fin`;
+  if (selectedData) {
+    document.getElementById(`imgIni`).src = `img/img${selectedData[semIni]}Ini.svg`;
+    document.getElementById(`imgFin`).src = `img/img${selectedData[semFin]}Fin.svg`;
+  }
+}
+
 // Función para mostrar los datos correspondientes al cambio en el select
 function mostrarDatos() {
   const selectElement = document.getElementById("miSelect");
@@ -82,6 +92,8 @@ function mostrarDatos() {
 
   // Busca el elemento en los datos del JSON
   const selectedData = data.find((item) => item.id === selectedId);
+
+  changeImg("1");
 
   // Mostrar contenido correspondiente a Decanatura
   document.getElementById("Deca1").style.display = selectedData.Deca1 === "1" ? "block" : "none";

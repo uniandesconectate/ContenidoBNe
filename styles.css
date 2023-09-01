@@ -14,6 +14,7 @@
   --secondary-font-family: "Anton", sans-serif;
   --font-size: 20px;
   --primary-font-color: #4a4b4b;
+  --secondary-font-color: #3c3c3a;
 }
 
 body {
@@ -40,10 +41,20 @@ h2 {
   color: var(--primary-color);
 }
 
+h2.black {
+  color: var(--secondary-font-color);
+}
+
 h3.orange {
   font-family: var(--secondary-font-family);
   font-weight: 600;
   color: var(--accent-color);
+}
+
+h3.blue {
+  font-family: var(--secondary-font-family);
+  font-weight: 600;
+  color: var(--primary-color);
 }
 
 h4 {
@@ -93,6 +104,22 @@ h4 {
   background-color: var(--white-color) !important;
   color: var(--accent-color) !important;
   border-color: var(--accent-color) !important;
+}
+
+.btn-blue,
+.btn-blue:hover,
+.btn-blue:focus {
+  background-color: var(--white-color) !important;
+  color: var(--primary-color) !important;
+  border: 2px solid var(--primary-color) !important;
+}
+
+.btn-blue.active,
+.btn-blue:hover,
+.btn-blue:focus {
+  background-color: var(--primary-color) !important;
+  color: var(--white-color) !important;
+  border-color: var(--primary-color) !important;
 }
 
 a {
@@ -181,6 +208,14 @@ a.enlace {
 
 .text-orange {
   color: var(--accent-color);
+}
+
+.text-blue {
+  color: var(--primary-color);
+}
+
+.border-left {
+  border-left: 1px solid var(--secondary-font-color);
 }
 
 #Deca1,

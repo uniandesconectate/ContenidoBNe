@@ -12,7 +12,7 @@
 
 <body>
   <main class="container-fluid my-3">
-    <input type="text" name="" id="bnSeccion" value="210618">
+    <input type="hidden" name="" id="bnSeccion" value="210618">
     <!-- espacio 01 Ingrear código -->
     <section class="mb-2">
       <h1>01.</h1>
@@ -635,8 +635,8 @@
             </li>
           </ol>
         </section>
-        <!-- sección Pre Quiz -->
-        <section class="estado">
+        <!-- Sección Pre Quiz -->
+        <section class="estado my-4 mx-3">
           <article class="prequiz row py-3 ">
             <div class="col-4">
               <h3 class="mb-0 orange">¿Cómo voy a empezar la semana?:</h3>
@@ -645,67 +645,153 @@
               <ul class=" nav nav-tabs botonera d-flex justify-content-center align-content-center flex-wrap"
                 id="Semana-nav-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                  <button class="btn rounded-pill mt-1 px-4 me-2 d-flex align-items-center" data-bs-toggle="tab"
-                    data-bs-target="#sem1-ini-tab-pane" aria-expanded="false" aria-controls="sem1-ini-tab-pane"
-                    id="btnSemana1" type="button" disabled>Semana 1</button>
+                  <button class="btn rounded-pill mt-1 px-4 me-2 d-flex align-items-center" id="btnIniSem1"
+                    data-bs-toggle="tab" data-bs-target="#sem1-ini-tab-pane" aria-expanded="false"
+                    aria-controls="sem1-ini-tab-pane" type="button" onclick="changeImg(1)" disabled>Semana 1</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="btn rounded-pill mt-1 px-4 me-2 d-flex align-items-center" id="btnSemana2"
+                  <button class="btn rounded-pill mt-1 px-4 me-2 d-flex align-items-center" id="btnIniSem2"
                     data-bs-toggle="tab" data-bs-target="#sem2-ini-tab-pane" role="tab"
-                    aria-controls="sem2-ini-tab-pane" aria-selected="true" type="button" disabled>Semana 2</button>
+                    aria-controls="sem2-ini-tab-pane" aria-selected="true" type="button" onclick="changeImg(2)"
+                    disabled>Semana 2</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="btn rounded-pill mt-1 px-4 me-2 d-flex align-items-center" id="btnSemana3"
+                  <button class="btn rounded-pill mt-1 px-4 me-2 d-flex align-items-center" id="btnIniSem3"
                     data-bs-toggle="tab" data-bs-target="#sem3-ini-tab-pane" role="tab" aria-controls="sem3-tab-pane"
-                    aria-selected="true" type="button" disabled>Semana 3</button>
+                    aria-selected="true" type="button" onclick="changeImg(3)" disabled>Semana 3</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="btn rounded-pill mt-1 px-4 me-2 d-flex align-items-center" id="btnSemana4"
+                  <button class="btn rounded-pill mt-1 px-4 me-2 d-flex align-items-center" id="btnIniSem4"
                     data-bs-toggle="tab" data-bs-target="#sem4-ini-tab-pane" role="tab"
-                    aria-controls="sem4-ini-tab-pane" aria-selected="true" type="button" disabled>Semana 4</button>
+                    aria-controls="sem4-ini-tab-pane" aria-selected="true" type="button" onclick="changeImg(4)"
+                    disabled>Semana 4</button>
                 </li>
               </ul>
             </div>
-          </article>
-          <article class="py-4">
-            <div class="row">
-              <div class="col-8">
-                <p class="text-orange">Cada semana, accede al cuestionario para evaluar tus conocimientos previos
-                  sobre el tema y explora los recursos de recomendación para planear tus acciones.</p>
-              </div>
-              <div class="col-4">
-                <div class="tab-content" id="myTabContent">
-                  <div class="tab-pane fade" id="sem1-ini-tab-pane" role="tabpanel" aria-labelledby="sem1-ini-tab"
-                    tabindex="0">
-                    <a href="" id="btnIni1" class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank"
-                      rel="noopener noreferrer">Cuestionario de la semana</a>
-                  </div>
-                  <div class="tab-pane fade" id="sem2-ini-tab-pane" role="tabpanel" aria-labelledby="sem2-ini-tab"
-                    tabindex="0">
-                    <a href="" id="btnIni2" class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank"
-                      rel="noopener noreferrer">Cuestionario de la semana</a>
-                  </div>
-                  <div class="tab-pane fade" id="sem3-ini-tab-pane" role="tabpanel" aria-labelledby="sem3-ini-tab"
-                    tabindex="0">
-                    <a href="" id="btnIni3" class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank"
-                      rel="noopener noreferrer">Cuestionario de la semana</a>
-                  </div>
-                  <div class="tab-pane fade" id="sem4-ini-tab-pane" role="tabpanel" aria-labelledby="sem4-ini-tab"
-                    tabindex="0">
-                    <a href="" id="btnIni4" class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank"
-                      rel="noopener noreferrer">Cuestionario de la semana</a>
+            <article class="pt-4">
+              <div class="row">
+                <div class="col-8">
+                  <p class="text-orange">Cada semana, accede al cuestionario para evaluar tus conocimientos previos
+                    sobre el tema y explora los recursos de recomendación para planear tus acciones.</p>
+                </div>
+                <div class="col-4">
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade" id="sem1-ini-tab-pane" role="tabpanel" aria-labelledby="sem1-ini-tab"
+                      tabindex="0">
+                      <a href="" id="btnIni1" class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank"
+                        rel="noopener noreferrer">Cuestionario de la semana</a>
+                    </div>
+                    <div class="tab-pane fade" id="sem2-ini-tab-pane" role="tabpanel" aria-labelledby="sem2-ini-tab"
+                      tabindex="0">
+                      <a href="" id="btnIni2" class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank"
+                        rel="noopener noreferrer">Cuestionario de la semana</a>
+                    </div>
+                    <div class="tab-pane fade" id="sem3-ini-tab-pane" role="tabpanel" aria-labelledby="sem3-ini-tab"
+                      tabindex="0">
+                      <a href="" id="btnIni3" class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank"
+                        rel="noopener noreferrer">Cuestionario de la semana</a>
+                    </div>
+                    <div class="tab-pane fade" id="sem4-ini-tab-pane" role="tabpanel" aria-labelledby="sem4-ini-tab"
+                      tabindex="0">
+                      <a href="" id="btnIni4" class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank"
+                        rel="noopener noreferrer">Cuestionario de la semana</a>
+                    </div>
                   </div>
                 </div>
+                <div class="col-12">
+                  <p>Conoce cómo volver a las posibilidades y los recursos: <a class="enlace"
+                      href="https://web.microsoftstream.com/video/15164f3e-1897-4e22-b815-a92a00c6aa01?channelId=ebecb0df-56d1-4ae2-88cb-5bbd1b10f93a"
+                      target="_blank" rel="noopener noreferrer">Click aquí</a></p>
+                </div>
               </div>
-              <div class="col-12">
-                <p>Conoce cómo volver a las posibilidades y los recursos: <a class="enlace"
-                    href="https://web.microsoftstream.com/video/15164f3e-1897-4e22-b815-a92a00c6aa01?channelId=ebecb0df-56d1-4ae2-88cb-5bbd1b10f93a"
-                    target="_blank" rel="noopener noreferrer">Click aquí</a></p>
-              </div>
+            </article>
+          </article>
+        </section>
+        <!-- Sección imagenes de progreso -->
+        <section>
+          <h2 class="black">Mi progreso en la semana</h2>
+          <article class="row pt-3 px-3">
+            <div class="col-6 px-5">
+              <img id="imgIni" src="" class="img-fluid" alt="">
+            </div>
+            <div class="col-6 px-5 border-left">
+              <img id="imgFin" src="" class="img-fluid" alt="">
             </div>
           </article>
         </section>
-        <section></section>
+        <section class="destacado p-5 text-center text-white">
+          <div class="row">
+            <div class="col-10 offset-1 d-flex justify-content-around align-items-center">
+              <h1 class="mb-0">¿Ya exploraste los recursos?</h1>
+              <a href="" class="btn active rounded-pill mt-1 px-4 me-2 d-flex align-items-center" target="_blank"
+                rel="noopener noreferrer">Planea tus acciones</a>
+            </div>
+          </div>
+        </section>
+        <!-- Sección Quiz Final -->
+        <section class="estado mx-3">
+          <article class="prequiz row py-3 ">
+            <div class="col-4">
+              <h3 class="mb-0 blue">¿Cómo finalizo la semana?:</h3>
+            </div>
+            <div class="col-8">
+              <ul class=" nav nav-tabs botonera d-flex justify-content-center align-content-center flex-wrap"
+                id="Semana-nav-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="btn btn-blue rounded-pill mt-1 px-4 me-2 d-flex align-items-center" id="btnFinSem1"
+                    onclick="changeImg(1)" data-bs-toggle="tab" data-bs-target="#sem1-fin-tab-pane"
+                    aria-expanded="false" aria-controls="sem1-fin-tab-pane" type="button" disabled>Semana 1</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="btn btn-blue rounded-pill mt-1 px-4 me-2 d-flex align-items-center" id="btnFinSem2"
+                    onclick="changeImg(2)" data-bs-toggle="tab" data-bs-target="#sem2-fin-tab-pane" role="tab"
+                    aria-controls="sem2-fin-tab-pane" aria-selected="true" type="button" disabled>Semana 2</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="btn btn-blue rounded-pill mt-1 px-4 me-2 d-flex align-items-center" id="btnFinSem3"
+                    onclick="changeImg(3)" data-bs-toggle="tab" data-bs-target="#sem3-fin-tab-pane" role="tab"
+                    aria-controls="sem3-tab-pane" aria-selected="true" type="button" disabled>Semana 3</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="btn btn-blue rounded-pill mt-1 px-4 me-2 d-flex align-items-center" id="btnFinSem4"
+                    onclick="changeImg(4)" data-bs-toggle="tab" data-bs-target="#sem4-fin-tab-pane" role="tab"
+                    aria-controls="sem4-fin-tab-pane" aria-selected="true" type="button" disabled>Semana 4</button>
+                </li>
+              </ul>
+            </div>
+            <article class="py-4">
+              <div class="row">
+                <div class="col-8">
+                  <p class="text-blue">Cada semana, accede al cuestionario y conoce tus logros.</p>
+                </div>
+                <div class="col-4">
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade" id="sem1-fin-tab-pane" role="tabpanel" aria-labelledby="sem1-fin-tab"
+                      tabindex="0">
+                      <a href="" id="btnFin1" class="rounded-pill btn-blue my-1 py-2 px-4 ms-2" target="_blank"
+                        rel="noopener noreferrer">Cuestionario de la semana</a>
+                    </div>
+                    <div class="tab-pane fade" id="sem2-fin-tab-pane" role="tabpanel" aria-labelledby="sem2-fin-tab"
+                      tabindex="0">
+                      <a href="" id="btnFin2" class="rounded-pill btn-blue my-1 py-2 px-4 ms-2" target="_blank"
+                        rel="noopener noreferrer">Cuestionario de la semana</a>
+                    </div>
+                    <div class="tab-pane fade" id="sem3-fin-tab-pane" role="tabpanel" aria-labelledby="sem3-fin-tab"
+                      tabindex="0">
+                      <a href="" id="btnFin3" class="rounded-pill btn-blue my-1 py-2 px-4 ms-2" target="_blank"
+                        rel="noopener noreferrer">Cuestionario de la semana</a>
+                    </div>
+                    <div class="tab-pane fade" id="sem4-fin-tab-pane" role="tabpanel" aria-labelledby="sem4-fin-tab"
+                      tabindex="0">
+                      <a href="" id="btnFin4" class="rounded-pill btn-blue my-1 py-2 px-4 ms-2" target="_blank"
+                        rel="noopener noreferrer">Cuestionario de la semana</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </article>
+        </section>
       </div>
       <!-- espacio matemáticas funciones -->
       <div class="tab-pane fade" id="fun-tab-pane" role="tabpanel" aria-labelledby="fun-tab-pane" tabindex="0">...
