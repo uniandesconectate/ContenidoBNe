@@ -1,34 +1,36 @@
 {
-  "1": {
-    "fechaInicio": "31/08/2023",
-    "fechaFin": "31/08/2023",
-    "cuestionarios": {
-      "urlInicio": "https://www.google.com/",
-      "urlFin": "https://uniandes.edu.co/"
-    }
-  },
-  "2": {
-    "fechaInicio": "",
-    "fechafin": "",
-    "cuestionarios": {
-      "urlInicio": "",
-      "urlFin": ""
-    }
-  },
-  "3": {
-    "fechaInicio": "",
-    "fechafin": "",
-    "cuestionarios": {
-      "urlInicio": "",
-      "urlFin": ""
-    }
-  },
-  "4": {
-    "fechaInicio": "",
-    "fechafin": "",
-    "cuestionarios": {
-      "urlInicio": "",
-      "urlFin": ""
+  "210618": {
+    "1": {
+      "fechaInicio": "04-09-2023 00:00:00",
+      "fechaFin": "25-09-2023 00:00:00",
+      "cuestionarios": {
+        "urlInicio": "https://www.google.com/",
+        "urlFin": "https://uniandes.edu.co/"
+      }
+    },
+    "2": {
+      "fechaInicio": "31-09-2023 00:00:00",
+      "fechaFin": "01-10-2023 00:00:00",
+      "cuestionarios": {
+        "urlInicio": "https://www.google.com/",
+        "urlFin": "https://uniandes.edu.co/"
+      }
+    },
+    "3": {
+      "fechaInicio": "31-10-2023 00:00:00",
+      "fechaFin": "01-11-2023 00:00:00",
+      "cuestionarios": {
+        "urlInicio": "https://www.google.com/",
+        "urlFin": "https://uniandes.edu.co/"
+      }
+    },
+    "4": {
+      "fechaInicio": "31-12-2023 00:00:00",
+      "fechaFin": "01-01-2024 00:00:00",
+      "cuestionarios": {
+        "urlInicio": "https://www.google.com/",
+        "urlFin": "https://uniandes.edu.co/"
+      }
     }
   }
 }

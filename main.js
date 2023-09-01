@@ -1,54 +1,74 @@
-window.addEventListener("DOMContentLoaded", () => {
-  const today = getAndFormatDate();
-  const weeksData = getWeeksData();
-  compareDate(today, weeksData);
+window.addEventListener("load", () => {
+  const seccion = document.querySelector("#bnSeccion").value;
+  const today = getDate();
+  getSeccionData(seccion, today);
 });
 
-// obtner la fecha actual y formatearla
-async function getAndFormatDate() {
-  const today = new Date();
-  let dd = String(today.getDate()).padStart(2, "0");
-  let mm = String(today.getMonth() + 1).padStart(2, "0"); //Enero es 0!
-  let yyyy = today.getFullYear();
-  let date = dd + "/" + mm + "/" + yyyy;
-  return date;
+// Obtner la fecha actual y formatearla
+function getDate() {
+  const today = Date.now();
+  return today;
 }
 
-// obtener los datos del JSON
-async function getWeeksData() {
-  let url = "semanas.json";
-  let response = await fetch(url);
-  const weeksData = await response.json();
-  return weeksData;
+// obtener los datos de la sección del JSON
+function getSeccionData(seccion, today) {
+  let seccionesData = {};
+  const url = "semanas.json";
+  const data = fetch(url);
+  data
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then((data) => {
+      seccionesData = data;
+      const seccionData = seccionesData[seccion];
+      compareDate(today, seccionData);
+    })
+    .catch((error) => {
+      console.error(`${error}`);
+    });
 }
 
 // Función para comparar la fecha actual con las fechas de inicio y fin de cada semana, activar los botones y cambiar las url
 function compareDate(today, weeksData) {
   const lenght = Object.keys(weeksData).length;
   for (let i = 1; i <= lenght; i++) {
-    if (weeksData[i].fechaInicio === today) {
-      let element = "btnInicio" + i;
-      activeButtons(element);
-      replaceUrl(weeksData[i].cuestionarios.urlInicio, element);
+    let fechaInicio = formatDate(weeksData[i].fechaInicio);
+    let fechaFin = formatDate(weeksData[i].fechaFin);
+    if (fechaInicio <= today) {
+      activeButtons(i);
+      replaceUrl(weeksData[i].cuestionarios.urlInicio, i, "Ini");
     }
-    if (weeksData[i].fechaFin === today) {
-      let element = "btnFin" + i;
-      activeButtons(element);
-      replaceUrl(weeksData[i].cuestionarios.urlFin, element);
+    if (fechaFin <= today) {
+      activeButtons(i);
+      replaceUrl(weeksData[i].cuestionarios.urlFin, i, "Fin");
     }
   }
 }
 
+function formatDate(dateString) {
+  const dt = dateString.split(/\-|\s/);
+  const date = new Date(dt.slice(0, 3).reverse().join("-") + " " + dt[3]);
+  return date;
+}
+
 // Función para activar los botones de inicio y fin de semana
-function activeButtons(element) {
+function activeButtons(id) {
+  let element = `btnSemana${id}`;
   let btn = document.getElementById(element);
-  if (btn) {
+  if (btn.classList.contains("disabled")) {
+    btn.classList.remove("disabled");
+  } else {
     btn.removeAttribute("disabled");
   }
 }
 
 // Función para cambiar la url del botón pre quiz y quiz
-function replaceUrl(url, element) {
+function replaceUrl(url, id, elem) {
+  let element = `btn${elem}${id}`;
   let btn = document.getElementById(element);
   if (btn) {
     btn.setAttribute("href", url);
