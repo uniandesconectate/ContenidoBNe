@@ -13,8 +13,11 @@ function mostrarDatos() {
   document.getElementById("Deca2").style.display = selectedData.Deca2 === "1" ? "block" : "none";
   document.getElementById("Deca3").style.display = selectedData.Deca3 === "1" ? "block" : "none";
 
-  // Mostrar imagen correspondiente a Matemáticas
-  document.getElementById(`imagen`).src = `img/foto${selectedData.imagen}.svg`;
+  // Mostrar contenido correspondiente a Matemáticas
+  for (let i = 0; i <= 6; i++) {
+    document.getElementById(`Mat${i}`).style.display = selectedData.Mat === `${i}` ? "block" : "none";
+    document.getElementById(`imagen${i}`).src = `img/foto${selectedData.imagen}.svg`;
+  }
 
   // Mostrar contenido correspondiente a P1 y P2
   document.getElementById("P1").style.display = selectedData.P1 === "1" ? "block" : "none";
