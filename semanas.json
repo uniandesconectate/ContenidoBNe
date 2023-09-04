@@ -35,11 +35,11 @@
   },
   "210621": {
     "1": {
-      "fechaInicio": "01-12-2023 00:00:00",
+      "fechaInicio": "04-09-2023 00:00:00",
       "fechaFin": "25-09-2023 00:00:00",
       "cuestionarios": {
-        "urlInicio": "https://www.google.com/",
-        "urlFin": "https://uniandes.edu.co/"
+        "urlInicio": "https://bloqueneon.uniandes.edu.co/d2l/lms/quizzing/user/quiz_submissions.d2l?bp=1&isprv=&fromQB=&qi=181544&ou=210621",
+        "urlFin": "https://bloqueneon.uniandes.edu.co/d2l/lms/quizzing/user/quiz_submissions.d2l?bp=1&isprv=&fromQB=&qi=179463&ou=210621"
       }
     },
     "2": {
