@@ -4,7 +4,6 @@
 <head>
   <title>Título página</title>
   <meta charset="utf-8" />
-  <script type="text/javascript" src="functions.js"></script>
   <link href="styles.css" rel="stylesheet" type="text/css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
@@ -13,6 +12,8 @@
 
 <body>
   <main class="container-fluid my-3">
+    <input type="hidden" name="" id="bnSeccion" value="210621">
+    <!-- espacio 01 Ingrear código -->
     <section class="mb-2">
       <h1>01.</h1>
       <label for="miSelect">
@@ -30,555 +31,898 @@
       </div>
     </section>
 
-    <!-- espacio matemáticas -->
-    <section id="espacio1" class="mt-5">
-      <h1>02.</h1>
-      <h2>¡HOLA!</h2>
-      <h2>CONOCE TUS RESULTADOS</h2>
-      <div class="row">
-        <div class="col-9">
-          <p>
-            En esta sección de tu bitácora podrás reconocer las habilidades que necesitarás durante el curso para seguir
-            avanzando hacia el éxito.
-            Además, te brindaremos recursos que te servirán para seguir mejorando.
-          </p>
-        </div>
-      </div>
-      <section class="botonera d-flex justify-content-center align-content-center flex-wrap">
-        <button class="btn btn-orange rounded-pill mt-1 px-4 me-2 d-flex align-items-center" type="button">
-          <span class="me-3">1.</span> Álgebra
-        </button>
-        <button class="btn rounded-pill mt-1 px-4 me-2 d-flex align-items-center" type="button" disabled>
-          <span class="me-3">2.</span> Ecuaciones y desigualdades
-          <img src="img/lock.svg" class="ms-3" alt="" />
-        </button>
-        <button class="btn rounded-pill mt-1 px-4 me-2 d-flex align-items-center" type="button" disabled>
-          <span class="me-3">3.</span> Funciones
-          <img src="img/lock.svg" class="ms-3" alt="" />
-        </button>
-        <button class="btn rounded-pill mt-1 px-4 me-2 d-flex align-items-center" type="button" disabled>
-          <span class="me-3">4.</span> Trigonometría
-          <img src="img/lock.svg" class="ms-3" alt="" />
-        </button>
-      </section>
-      <div class="img-section p-4 pb-0">
-        <div id="Mat0" class="px-5 pt-5 card-body">
-          <img src="" id="imagen0" class="img-fluid" />
-        </div>
-        <div id="Mat1" class="px-5 pt-5 card-body">
-          <img src="" id="imagen1" class="img-fluid" />
-        </div>
-        <div id="Mat2" class="px-5 pt-5 card-body">
-          <img src="" id="imagen2" class="img-fluid" />
-        </div>
-        <div id="Mat3" class="px-5 pt-5 card-body">
-          <img src="" id="imagen3" class="img-fluid" />
-        </div>
-        <div id="Mat4" class="px-5 pt-5 card-body">
-          <img src="" id="imagen4" class="img-fluid" />
-        </div>
-        <div id="Mat5" class="px-5 pt-5 card-body">
-          <img src="" id="imagen5" class="img-fluid" />
-        </div>
-        <div id="Mat6" class="px-5 pt-5 card-body">
-          <img src="" id="imagen6" class="img-fluid" />
-        </div>
-      </div>
-    </section>
-    <section class="destacado p-5 text-center text-white">
-      <h3>No importa en qué punto te encuentres ahora,</h3>
-      <p>estas sugerencias te ayudarán a perfeccionar tu conocimiento y a alcanzar un mayor dominio en álgebra</p>
-    </section>
-    <section class="recursos mb-5 p-3">
-      <ul class="nav nav-tabs mb-4 d-flex justify-content-center align-content-center flex-wrap" id="myTab"
-        role="tablist">
-        <li id="navItemP1" class="nav-item" role="presentation">
-          <button class="nav-link btn rounded-pill my-1 px-4 me-2 d-flex" id="p1-tab" data-bs-toggle="tab"
-            data-bs-target="#p1-tab-pane" type="button" role="tab" aria-controls="p1-tab-pane" aria-selected="true">
-            Exponentes
-          </button>
-        </li>
-        <li id="navItemP2" class="nav-item" role="presentation">
-          <button class="nav-link btn rounded-pill my-1 px-4 me-2 d-flex" id="p2-tab" data-bs-toggle="tab"
-            data-bs-target="#p2-tab-pane" type="button" role="tab" aria-controls="p2-tab-pane" aria-selected="false">
-            Factorización y operaciones de polinomios
-          </button>
-        </li>
-        <li id="navItemP3" class="nav-item" role="presentation">
-          <button class="nav-link btn rounded-pill my-1 px-4 me-2 d-flex" id="p3-tab" data-bs-toggle="tab"
-            data-bs-target="#p3-tab-pane" type="button" role="tab" aria-controls="p3-tab-pane" aria-selected="false">
-            Operaciones de números reales
-          </button>
-        </li>
-        <li id="navItemP4" class="nav-item" role="presentation">
-          <button class="nav-link btn rounded-pill my-1 px-4 me-2 d-flex" id="p4-tab" data-bs-toggle="tab"
-            data-bs-target="#p4-tab-pane" type="button" role="tab" aria-controls="p4-tab-pane" aria-selected="false">
-            Expresiones racionales
-          </button>
-        </li>
-        <li id="navItemP5" class="nav-item" role="presentation">
-          <button class="nav-link btn rounded-pill my-1 px-4 me-2 d-flex" id="p5-tab" data-bs-toggle="tab"
-            data-bs-target="#p5-tab-pane" type="button" role="tab" aria-controls="p5-tab-pane" aria-selected="false">
-            División de polinomios
-          </button>
-        </li>
-      </ul>
-      <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade" id="p1-tab-pane" role="tabpanel" aria-labelledby="p1-tab">
-          <div id="P1">
-            <div class="row">
-              <div class="col-8">
-                <div class="d-flex align-items-center mb-1">
-                  <img src="img/icon-1.svg" class="icon-p" alt="" />
-                  <div class="enlaces">
-                    <a href="https://uniandes-my.sharepoint.com/:b:/g/personal/ayudaprofconectate_uniandes_edu_co/EeGVIHbyS0hAtvQ-42GmIh4Bdmciy_Nh3o9jfPaVHeSXFg?e=jLRfhW"
-                      class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank" rel="noopener noreferrer">Sección 1.2 de
-                      la cartilla (Exponentes enteros)</a>
-                    <a href="https://uniandes-my.sharepoint.com/:b:/g/personal/ayudaprofconectate_uniandes_edu_co/EeGVIHbyS0hAtvQ-42GmIh4Bdmciy_Nh3o9jfPaVHeSXFg?e=jLRfhW"
-                      class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank" rel="noopener noreferrer">Sección 1.3 de
-                      la cartilla (Exponentes racionales)</a>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center mb-1">
-                  <img src="img/icon-2.svg" class="icon-p" alt="" />
-                  <div class="enlaces">
-                    <a href="https://bloqueneon.uniandes.edu.co/d2l/le/lessons/210621/topics/1614839"
-                      class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank" rel="noopener noreferrer">Taller 2</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4 px-4">
-                <div class="card rounded-4">
-                  <div class="card-body text-center">
-                    <h4>¿Ya exploraste los recursos?</h4>
-                    <p>Ahora planea cuáles te ayudarán a alcanzar tus metas:</p>
-                    <a href="https://bloqueneon.uniandes.edu.co/d2l/le/lessons/210621/topics/1624672" target="_blank" rel="noopener noreferrer"
-                      class="btn btn-orange rounded-pill my-1 py-2 px-4">Planea tus acciones</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="p2-tab-pane" role="tabpanel" aria-labelledby="p2-tab">
-          <div id="P2">
-            <div class="row">
-              <div class="col-8">
-                <div class="d-flex align-items-center mb-1">
-                  <img src="img/icon-1.svg" class="icon-p" alt="" />
-                  <div class="enlaces">
-                    <a href="https://uniandes-my.sharepoint.com/:b:/g/personal/ayudaprofconectate_uniandes_edu_co/EeGVIHbyS0hAtvQ-42GmIh4Bdmciy_Nh3o9jfPaVHeSXFg?e=jLRfhW"
-                      class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank" rel="noopener noreferrer">Sección 1.4
-                      (Polinomios) ejercicios adicionales: 1, 2 y 3</a>
-                    <a href="https://uniandes-my.sharepoint.com/:b:/g/personal/ayudaprofconectate_uniandes_edu_co/EeGVIHbyS0hAtvQ-42GmIh4Bdmciy_Nh3o9jfPaVHeSXFg?e=jLRfhW"
-                      class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank" rel="noopener noreferrer">Sección 1.5
-                      Factorización de polinomios</a>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center mb-1">
-                  <img src="img/icon-2.svg" class="icon-p" alt="" />
-                  <div class="enlaces">
-                    <a href="https://bloqueneon.uniandes.edu.co/d2l/le/lessons/210621/topics/1614840"
-                      class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank" rel="noopener noreferrer">Taller 3:
-                      ejercicios 1, 4, 5 y 6</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4 px-4">
-                <div class="card rounded-4">
-                  <div class="card-body text-center">
-                    <h4>¿Ya exploraste los recursos?</h4>
-                    <p>Ahora planea cuáles te ayudarán a alcanzar tus metas:</p>
-                    <a href="https://bloqueneon.uniandes.edu.co/d2l/le/lessons/210621/topics/1624672" target="_blank" rel="noopener noreferrer"
-                      class="btn btn-orange rounded-pill my-1 py-2 px-4">Planea tus acciones</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="p3-tab-pane" role="tabpanel" aria-labelledby="p3-tab">
-          <div id="P3">
-            <div class="row">
-              <div class="col-8">
-                <div class="d-flex align-items-center mb-1">
-                  <img src="img/icon-1.svg" class="icon-p" alt="" />
-                  <div class="enlaces">
-                    <a href="https://uniandes-my.sharepoint.com/:b:/g/personal/ayudaprofconectate_uniandes_edu_co/EeGVIHbyS0hAtvQ-42GmIh4Bdmciy_Nh3o9jfPaVHeSXFg?e=jLRfhW"
-                      class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank" rel="noopener noreferrer">Sección 1.1 de
-                      la cartilla (Operaciones de números reales)</a>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center mb-1">
-                  <img src="img/icon-2.svg" class="icon-p" alt="" />
-                  <div class="enlaces">
-                    <a href="https://bloqueneon.uniandes.edu.co/d2l/le/lessons/210621/topics/1614838"
-                      class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank" rel="noopener noreferrer">Taller 1</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4 px-4">
-                <div class="card rounded-4">
-                  <div class="card-body text-center">
-                    <h4>¿Ya exploraste los recursos?</h4>
-                    <p>Ahora planea cuáles te ayudarán a alcanzar tus metas:</p>
-                    <a href="https://bloqueneon.uniandes.edu.co/d2l/le/lessons/210621/topics/1624672" target="_blank" rel="noopener noreferrer"
-                      class="btn btn-orange rounded-pill my-1 py-2 px-4">Planea tus acciones</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="p4-tab-pane" role="tabpanel" aria-labelledby="p4-tab">
-          <div id="P4">
-            <div class="row">
-              <div class="col-8">
-                <div class="d-flex align-items-center mb-1">
-                  <img src="img/icon-1.svg" class="icon-p" alt="" />
-                  <div class="enlaces">
-                    <a href="https://uniandes-my.sharepoint.com/:b:/g/personal/ayudaprofconectate_uniandes_edu_co/EeGVIHbyS0hAtvQ-42GmIh4Bdmciy_Nh3o9jfPaVHeSXFg?e=jLRfhW"
-                      class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank" rel="noopener noreferrer">Sección 1.6 de
-                      la cartilla (Expresiones racionales)</a>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center mb-1">
-                  <img src="img/icon-2.svg" class="icon-p" alt="" />
-                  <div class="enlaces">
-                    <a href="https://bloqueneon.uniandes.edu.co/d2l/le/lessons/210621/topics/1614841"
-                      class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank" rel="noopener noreferrer">Taller 4</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4 px-4">
-                <div class="card rounded-4">
-                  <div class="card-body text-center">
-                    <h4>¿Ya exploraste los recursos?</h4>
-                    <p>Ahora planea cuáles te ayudarán a alcanzar tus metas:</p>
-                    <a href="https://bloqueneon.uniandes.edu.co/d2l/le/lessons/210621/topics/1624672" target="_blank" rel="noopener noreferrer"
-                      class="btn btn-orange rounded-pill my-1 py-2 px-4">Planea tus acciones</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="tab-pane fade" id="p5-tab-pane" role="tabpanel" aria-labelledby="p5-tab">
-          <div id="P5">
-            <div class="row">
-              <div class="col-8">
-                <div class="d-flex align-items-center mb-1">
-                  <img src="img/icon-1.svg" class="icon-p" alt="" />
-                  <div class="enlaces">
-                    <a href="https://uniandes-my.sharepoint.com/:b:/g/personal/ayudaprofconectate_uniandes_edu_co/EeGVIHbyS0hAtvQ-42GmIh4Bdmciy_Nh3o9jfPaVHeSXFg?e=jLRfhW"
-                      class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank" rel="noopener noreferrer">Sección 1.4
-                      (Polinomios) ejercicios adicional: 4</a>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center mb-1">
-                  <img src="img/icon-2.svg" class="icon-p" alt="" />
-                  <div class="enlaces">
-                    <a href="https://bloqueneon.uniandes.edu.co/d2l/le/lessons/210621/topics/1614840"
-                      class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank" rel="noopener noreferrer">Taller 3:
-                      ejercicios 2, 3 y 7</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4 px-4">
-                <div class="card rounded-4">
-                  <div class="card-body text-center">
-                    <h4>¿Ya exploraste los recursos?</h4>
-                    <p>Ahora planea cuáles te ayudarán a alcanzar tus metas:</p>
-                    <a href="https://bloqueneon.uniandes.edu.co/d2l/le/lessons/210621/topics/1624672" target="_blank" rel="noopener noreferrer"
-                      class="btn btn-orange rounded-pill my-1 py-2 px-4">Planea tus acciones</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- espacio decanatura -->
-    <section class="divisor py-3">
-      <h3 class="m-0 text-center text-white">REVISA ESTA INFORMACIÓN, ¡ES IMPORTANTE PARA TU PROCESO DE APRENDIZAJE!
-      </h3>
-    </section>
-    <section class="bck-1">
-      <div class="row">
-        <div class="col-2 pt-5 pb-3 ps-5">
-          <img src="img/person.svg" alt="" class="img-fluid" />
-        </div>
-        <div class="col-8 pt-5 pb-3 px-0">
-          <p>
-            Queremos apoyarte en este proceso y para conocerte mejor realizaste previamente la prueba “Déjanos saber de
-            ti”. En esta evaluamos tres
-            aspectos que son fundamentales y deben cultivarse para alcanzar el camino del éxito en la universidad:
-          </p>
-          <div class="row">
-            <div class="col-12">
-              <div class="badge my-2 text-white">Tus hábitos y estrategias de estudio</div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="badge my-2 text-white">Tus habilidades para el manejo de emociones</div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="badge my-2 text-white">Cómo percibes las relaciones y apoyo social con los que cuentas</div>
-            </div>
-          </div>
-          <p>
-            Basándonos en los resultados, recomendamos esta serie de recursos que te permitirán identificar tus
-            fortalezas y puntos de mejora para
-            tomar mejores decisiones y así alcanzar tus metas.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="bck-2">
-      <section class="destacado p-5 text-center text-white">
-        <h3>No te preocupes si no sabes por dónde empezar,</h3>
-        <p>
-          sugerimos que inicies por aprender a planear y gestionar el tiempo, revisa este artículo que hemos preparado
-          para estudiantes como tú:
-        </p>
-        <div class="enlace">
-          <img src="img/icon-enlace.svg" alt="" />
-          <a href="https://comunidadorion.uniandes.edu.co/en-que-se-nos-va-el-tiempo/" class="btn btn-orange rounded-3"
-            target="_blank" rel="noopener noreferrer">
-            ¿En qué se nos va el tiempo?
-          </a>
-        </div>
-      </section>
-      <section class="px-5 py-3">
-        <p class="mx-5">¿Te pareció útil? Ahora que ya tienes una mejor idea de cómo manejar mejor el tiempo, puedes
-          revisar estos contenidos:</p>
+    <!-- espacio 02 CONOCE TUS RESULTADOS + tabs -->
+    <section class="mb-3">
+      <section id="espacio1" class="mt-5">
+        <h1>02.</h1>
+        <h2>¡HOLA! CONOCE TUS RESULTADOS</h2>
         <div class="row">
-          <div class="col-6">
-            <div class="card card-orange my-3 rounded-4">
-              <div class="card-body text-center">
-                <p>
-                  Agéndate para el taller de manejo del <br />
-                  tiempo
-                </p>
-                <a href="https://evento.uniandes.edu.co/es/ciclo-2-un-reloj-no-te-da-mas-tiempo-2023-2" target="_blank"
-                  rel="noopener noreferrer" class="btn btn-orange rounded-pill my-3 py-2 px-4">Agendar</a>
-              </div>
-            </div>
-            <div class="card card-orange my-3 rounded-4">
-              <div class="card-body text-center">
-                <p>
-                  Practica con estos ejercicios: “Tener metas claras <br />
-                  aumenta nuestra motivación en el día a día”
-                </p>
-                <a href="https://comunidadorion.uniandes.edu.co/atrevete-a-lograr-tus-metas/" target="_blank"
-                  rel="noopener noreferrer" class="btn btn-orange rounded-pill my-3 py-2 px-4">Practicar</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="card card-orange my-3 rounded-4">
-              <div class="card-body text-center">
-                <p>
-                  Revisa esta infografía: “Preparar tus exámenes <br />
-                  con tiempo te ayudará a tener mejores”
-                </p>
-                <a href="https://comunidadorion.uniandes.edu.co/preparacion-de-examenes/" target="_blank"
-                  rel="noopener noreferrer" class="btn btn-orange rounded-pill my-3 py-2 px-4">Revisar</a>
-              </div>
-            </div>
-            <div class="card card-orange my-3 rounded-4">
-              <div class="card-body text-center">
-                <p>
-                  Lee este artículo: “Frustrarse en el proceso de <br />
-                  aprendizaje es necesario”
-                </p>
-                <a href="https://agora.uniandes.edu.co/aceptate-y-crece-a-traves-de-la-autocompasion/" target="_blank"
-                  rel="noopener noreferrer" class="btn btn-orange rounded-pill my-3 py-2 px-4">Leer</a>
-              </div>
-            </div>
+          <div class="col-9">
+            <p>
+              En esta sección de tu bitácora podrás reconocer las habilidades que necesitarás durante el curso para
+              seguir
+              avanzando hacia el éxito.
+              Además, te brindaremos recursos que te servirán para seguir mejorando.
+            </p>
           </div>
         </div>
+        <section class="nav nav-tabs botonera d-flex justify-content-center align-content-center flex-wrap" id="nav-tab"
+          role="tablist">
+          <button class="btn active rounded-pill mt-1 px-4 me-2 d-flex align-items-center" id="alg-tab"
+            data-bs-toggle="tab" data-bs-target="#alg-tab-pane" role="tab" aria-controls="alg-tab-pane"
+            aria-selected="true" type="button">
+            <span class="me-3">1.</span> Álgebra
+          </button>
+          <button class="btn rounded-pill mt-1 px-4 me-2 d-flex align-items-center" id="ecu-tab" data-bs-toggle="tab"
+            data-bs-target="#ecu-tab-pane" role="tab" aria-controls="ecu-tab-pane" aria-selected="true" type="button">
+            <span class="me-3">2.</span> Ecuaciones y desigualdades
+          </button>
+          <button class="btn rounded-pill mt-1 px-4 me-2 d-flex align-items-center" id="ecu-tab" data-bs-toggle="tab"
+            data-bs-target="#fun-tab-pane" role="tab" aria-controls="fun-tab-pane" aria-selected="true" type="button"
+            disabled>
+            <span class="me-3">3.</span> Funciones
+            <img src="img/lock.svg" class="ms-3" alt="" />
+          </button>
+          <button class="btn rounded-pill mt-1 px-4 me-2 d-flex align-items-center" id="ecu-tab" data-bs-toggle="tab"
+            data-bs-target="#tri-tab-pane" role="tab" aria-controls="tri-tab-pane" aria-selected="true" type="button"
+            disabled>
+            <span class="me-3">4.</span> Trigonometría
+            <img src="img/lock.svg" class="ms-3" alt="" />
+          </button>
+        </section>
       </section>
-      <div id="Deca1" class="card-body">
-        <section class="destacado p-5 text-center text-white">
-          <h3>Para mejorar tus hábitos de estudio te hemos preparado estas recomendaciones:</h3>
-          <div class="enlace">
-            <a href="https://comunidadorion.uniandes.edu.co/aumenta-la-productividad-en-la-u-con-las-5s/"
-              class="btn btn-orange rounded-3" target="_blank" rel="noopener noreferrer">
-              Aumenta la productividad en la U
-            </a>
-          </div>
-        </section>
-        <section class="px-5 py-3">
-          <p class="mx-5">
-            ¿Te sirvieron las recomendaciones? Ahora que ya conoces algunos hábitos para ser más eficiente al momento de
-            estudiar, revisa los demás
-            recursos:
-          </p>
-          <div class="row">
-            <div class="col-6">
-              <div class="card card-orange my-3 rounded-4">
-                <div class="card-body text-center">
-                  <p>
-                    Conoce qué estrategias de aprendizaje <br />
-                    puedes aplicar
-                  </p>
-                  <a href="https://comunidadorion.uniandes.edu.co/estrategias-de-aprendizaje/" target="_blank"
-                    rel="noopener noreferrer" class="btn btn-orange rounded-pill my-3 py-2 px-4">Conocer</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="card card-orange my-3 rounded-4">
-                <div class="card-body text-center">
-                  <p>
-                    Prueba estos mecanismos <br />
-                    de aprendizaje
-                  </p>
-                  <a href="https://comunidadorion.uniandes.edu.co/mecanismos-de-aprendizaje/" target="_blank"
-                    rel="noopener noreferrer" class="btn btn-orange rounded-pill my-3 py-2 px-4">Probar</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <div id="Deca2" class="card-body">
-        <section class="destacado p-5 text-center text-white">
-          <h3>
-            Conocer personas nuevas y construir relaciones en esta etapa puede ser retador por eso diseñamos este
-            podcast que te dará algunas
-            herramientas:
-          </h3>
-          <div class="enlace">
-            <a href="https://agora.uniandes.edu.co/codigo-agora/" class="btn btn-orange rounded-3" target="_blank"
-              rel="noopener noreferrer">
-              Conectados en pospandemia
-            </a>
-          </div>
-        </section>
-        <section class="px-5 py-3">
-          <p class="mx-5">
-            ¿Te sirvieron las recomendaciones? Ahora que ya conoces algunas herramientas para mejorar tus relaciones,
-            revisa los demás recursos:
-          </p>
-          <div class="row">
-            <div class="col-6">
-              <div class="card card-orange my-3 rounded-4">
-                <div class="card-body text-center">
-                  <p>
-                    Conoce grupos de estudiantes que <br />
-                    comparten diferentes intereses ¡anímate!
-                  </p>
-                  <a href="https://decanaturadeestudiantes.uniandes.edu.co/plus/formacion-iniciativas-estudiantiles"
-                    target="_blank" rel="noopener noreferrer"
-                    class="btn btn-orange rounded-pill my-3 py-2 px-4">Conectar</a>
-                </div>
-              </div>
-              <div class="card card-orange my-3 rounded-4">
-                <div class="card-body text-center">
-                  <p>
-                    Prueba estos consejos para tratar algunos <br />
-                    temas con tu familia
-                  </p>
-                  <a href="https://agora.uniandes.edu.co/nuevo-en-la-u-habla-con-tus-papas-sobre-estos-temas/"
-                    target="_blank" rel="noopener noreferrer"
-                    class="btn btn-orange rounded-pill my-3 py-2 px-4">Probar</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="card card-orange my-3 rounded-4">
-                <div class="card-body text-center">
-                  <p>
-                    Amplia tu círculo de apoyo con los <br />
-                    embajadores de bienestar
-                  </p>
-                  <a href="https://agora.uniandes.edu.co/embajadores-de-bienestar/" target="_blank"
-                    rel="noopener noreferrer" class="btn btn-orange rounded-pill my-3 py-2 px-4">Inscribirse</a>
-                </div>
-              </div>
-              <div class="card card-orange my-3 rounded-4">
-                <div class="card-body text-center">
-                  <p>
-                    Monitorear tu motivación, te ayudará en tus <br />
-                    procesos de aprendizaje
-                  </p>
-                  <a href="https://comunidadorion.uniandes.edu.co/motivacion-en-la-universidad/" target="_blank"
-                    rel="noopener noreferrer" class="btn btn-orange rounded-pill my-3 py-2 px-4">Monitorear</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <div id="Deca3" class="card-body">
-        <section class="destacado p-5 text-center text-white">
-          <h3>
-            Queremos que en tu paso por la universidad encuentres diferentes formas de enfrentar los desafios, para esto
-            te sugerimos descargar esta
-            app donde encontratrás algunos ejercicios efectivos y rápidos:
-          </h3>
-          <div class="enlace">
-            <a href="https://ghdo.uniandes.edu.co/wp-content/uploads/2023/07/Guia-para-descargar-ExpiWell_UV_.pdf"
-              class="btn btn-orange rounded-3" target="_blank" rel="noopener noreferrer">
-              Conoce Expiwell
-            </a>
-          </div>
-        </section>
-        <section class="px-5 py-3">
-          <p class="mx-5">
-            ¿Te sirvieron las recomendaciones? Ahora que ya conoces algunas herramientas para reducir el estrés, revisa
-            los demás recursos:
-          </p>
-          <div class="row">
-            <div class="col-6">
-              <div class="card card-orange my-3 rounded-4">
-                <div class="card-body text-center">
-                  <p>
-                    Aprende a regular <br />
-                    tus emociones
-                  </p>
-                  <a href="https://agora.uniandes.edu.co/autorregulacion-una-habilidad-para-la-vida/" target="_blank"
-                    rel="noopener noreferrer" class="btn btn-orange rounded-pill my-3 py-2 px-4">Aprender</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="card card-orange my-3 rounded-4">
-                <div class="card-body text-center">
-                  <p>Explora esta guía para hacer uso eficiente de tu tiempo</p>
-                  <a href="https://comunidadorion.uniandes.edu.co/mecanismos-de-aprendizaje/" target="_blank"
-                    rel="noopener noreferrer" class="btn btn-orange rounded-pill my-3 py-2 px-4">Explorar</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
     </section>
-    <section class="bck-2">
-      <div class="row">
-        <div class="col-4 offset-8 px-4">
-          <div class="card rounded-4">
-            <div class="card-body text-center">
-              <h4>¿Ya exploraste los recursos?</h4>
-              <p>Ahora planea cuáles te ayudarán a alcanzar tus metas:</p>
-              <a href="https://bloqueneon.uniandes.edu.co/d2l/le/lessons/210621/topics/1624672" target="_blank" rel="noopener noreferrer"
-                class="btn btn-orange rounded-pill my-1 py-2 px-4">Planea tus acciones</a>
+    <div class="tab-content" id="nav-tabContent">
+      <!-- espacio matemáticas álgebra -->
+      <div class="tab-pane fade show active" id="alg-tab-pane" role="tabpanel" aria-labelledby="alg-tab-pane"
+        tabindex="0">
+        <!-- espacio matemáticas -->
+        <section class="">
+          <div class="img-section p-4 pb-0">
+            <div id="Mat" class="px-5 card-body">
+              <img src="" id="imagen" class="img-fluid" alt="" />
             </div>
           </div>
-        </div>
+          <section class="destacado p-5 text-center text-white">
+            <h3>No importa en qué punto te encuentres ahora,</h3>
+            <p>estas sugerencias te ayudarán a perfeccionar tu conocimiento y a alcanzar un mayor dominio en álgebra</p>
+          </section>
+          <section class="recursos mb-5 p-3">
+            <ul class="nav nav-tabs mb-4 d-flex justify-content-center align-content-center flex-wrap" id="myTab"
+              role="tablist">
+              <li id="navItemP1" class="nav-item" role="presentation">
+                <button class="nav-link btn rounded-pill my-1 px-4 me-2 d-flex" id="p1-tab" data-bs-toggle="tab"
+                  data-bs-target="#p1-tab-pane" type="button" role="tab" aria-controls="p1-tab-pane"
+                  aria-selected="true">
+                  Exponentes
+                </button>
+              </li>
+              <li id="navItemP2" class="nav-item" role="presentation">
+                <button class="nav-link btn rounded-pill my-1 px-4 me-2 d-flex" id="p2-tab" data-bs-toggle="tab"
+                  data-bs-target="#p2-tab-pane" type="button" role="tab" aria-controls="p2-tab-pane"
+                  aria-selected="false">
+                  Factorización y operaciones de polinomios
+                </button>
+              </li>
+              <li id="navItemP3" class="nav-item" role="presentation">
+                <button class="nav-link btn rounded-pill my-1 px-4 me-2 d-flex" id="p3-tab" data-bs-toggle="tab"
+                  data-bs-target="#p3-tab-pane" type="button" role="tab" aria-controls="p3-tab-pane"
+                  aria-selected="false">
+                  Operaciones de números reales
+                </button>
+              </li>
+              <li id="navItemP4" class="nav-item" role="presentation">
+                <button class="nav-link btn rounded-pill my-1 px-4 me-2 d-flex" id="p4-tab" data-bs-toggle="tab"
+                  data-bs-target="#p4-tab-pane" type="button" role="tab" aria-controls="p4-tab-pane"
+                  aria-selected="false">
+                  Expresiones racionales
+                </button>
+              </li>
+              <li id="navItemP5" class="nav-item" role="presentation">
+                <button class="nav-link btn rounded-pill my-1 px-4 me-2 d-flex" id="p5-tab" data-bs-toggle="tab"
+                  data-bs-target="#p5-tab-pane" type="button" role="tab" aria-controls="p5-tab-pane"
+                  aria-selected="false">
+                  División de polinomios
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade" id="p1-tab-pane" role="tabpanel" aria-labelledby="p1-tab">
+                <div id="P1">
+                  <div class="row">
+                    <div class="col-8">
+                      <div class="d-flex align-items-center mb-1">
+                        <img src="img/icon-1.svg" class="icon-p" alt="" />
+                        <div class="enlaces">
+                          <a href="https://uniandes-my.sharepoint.com/:b:/g/personal/ayudaprofconectate_uniandes_edu_co/EeGVIHbyS0hAtvQ-42GmIh4Bdmciy_Nh3o9jfPaVHeSXFg?e=jLRfhW"
+                            class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank" rel="noopener noreferrer">Sección
+                            1.2
+                            de
+                            la cartilla (Exponentes enteros)</a>
+                          <a href="https://uniandes-my.sharepoint.com/:b:/g/personal/ayudaprofconectate_uniandes_edu_co/EeGVIHbyS0hAtvQ-42GmIh4Bdmciy_Nh3o9jfPaVHeSXFg?e=jLRfhW"
+                            class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank" rel="noopener noreferrer">Sección
+                            1.3
+                            de
+                            la cartilla (Exponentes racionales)</a>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center mb-1">
+                        <img src="img/icon-2.svg" class="icon-p" alt="" />
+                        <div class="enlaces">
+                          <a href="https://bloqueneon.uniandes.edu.co/d2l/le/lessons/210621/topics/1614839"
+                            class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank" rel="noopener noreferrer">Taller
+                            2</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4 px-4">
+                      <div class="card rounded-4">
+                        <div class="card-body text-center">
+                          <h4>¿Ya exploraste los recursos?</h4>
+                          <p>Ahora planea cuáles te ayudarán a alcanzar tus metas:</p>
+                          <a href="https://bloqueneon.uniandes.edu.co/d2l/le/lessons/210621/topics/1624672" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-orange rounded-pill my-1 py-2 px-4">Planea tus acciones</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="p2-tab-pane" role="tabpanel" aria-labelledby="p2-tab">
+                <div id="P2">
+                  <div class="row">
+                    <div class="col-8">
+                      <div class="d-flex align-items-center mb-1">
+                        <img src="img/icon-1.svg" class="icon-p" alt="" />
+                        <div class="enlaces">
+                          <a href="https://uniandes-my.sharepoint.com/:b:/g/personal/ayudaprofconectate_uniandes_edu_co/EeGVIHbyS0hAtvQ-42GmIh4Bdmciy_Nh3o9jfPaVHeSXFg?e=jLRfhW"
+                            class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank" rel="noopener noreferrer">Sección
+                            1.4
+                            (Polinomios) ejercicios adicionales: 1, 2 y 3</a>
+                          <a href="https://uniandes-my.sharepoint.com/:b:/g/personal/ayudaprofconectate_uniandes_edu_co/EeGVIHbyS0hAtvQ-42GmIh4Bdmciy_Nh3o9jfPaVHeSXFg?e=jLRfhW"
+                            class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank" rel="noopener noreferrer">Sección
+                            1.5
+                            Factorización de polinomios</a>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center mb-1">
+                        <img src="img/icon-2.svg" class="icon-p" alt="" />
+                        <div class="enlaces">
+                          <a href="https://bloqueneon.uniandes.edu.co/d2l/le/lessons/210621/topics/1614840"
+                            class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank" rel="noopener noreferrer">Taller 3:
+                            ejercicios 1, 4, 5 y 6</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4 px-4">
+                      <div class="card rounded-4">
+                        <div class="card-body text-center">
+                          <h4>¿Ya exploraste los recursos?</h4>
+                          <p>Ahora planea cuáles te ayudarán a alcanzar tus metas:</p>
+                          <a href="https://bloqueneon.uniandes.edu.co/d2l/le/lessons/210621/topics/1624672" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-orange rounded-pill my-1 py-2 px-4">Planea tus acciones</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="p3-tab-pane" role="tabpanel" aria-labelledby="p3-tab">
+                <div id="P3">
+                  <div class="row">
+                    <div class="col-8">
+                      <div class="d-flex align-items-center mb-1">
+                        <img src="img/icon-1.svg" class="icon-p" alt="" />
+                        <div class="enlaces">
+                          <a href="https://uniandes-my.sharepoint.com/:b:/g/personal/ayudaprofconectate_uniandes_edu_co/EeGVIHbyS0hAtvQ-42GmIh4Bdmciy_Nh3o9jfPaVHeSXFg?e=jLRfhW"
+                            class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank" rel="noopener noreferrer">Sección
+                            1.1
+                            de
+                            la cartilla (Operaciones de números reales)</a>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center mb-1">
+                        <img src="img/icon-2.svg" class="icon-p" alt="" />
+                        <div class="enlaces">
+                          <a href="https://bloqueneon.uniandes.edu.co/d2l/le/lessons/210621/topics/1614838"
+                            class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank" rel="noopener noreferrer">Taller
+                            1</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4 px-4">
+                      <div class="card rounded-4">
+                        <div class="card-body text-center">
+                          <h4>¿Ya exploraste los recursos?</h4>
+                          <p>Ahora planea cuáles te ayudarán a alcanzar tus metas:</p>
+                          <a href="https://bloqueneon.uniandes.edu.co/d2l/le/lessons/210621/topics/1624672" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-orange rounded-pill my-1 py-2 px-4">Planea tus acciones</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="p4-tab-pane" role="tabpanel" aria-labelledby="p4-tab">
+                <div id="P4">
+                  <div class="row">
+                    <div class="col-8">
+                      <div class="d-flex align-items-center mb-1">
+                        <img src="img/icon-1.svg" class="icon-p" alt="" />
+                        <div class="enlaces">
+                          <a href="https://uniandes-my.sharepoint.com/:b:/g/personal/ayudaprofconectate_uniandes_edu_co/EeGVIHbyS0hAtvQ-42GmIh4Bdmciy_Nh3o9jfPaVHeSXFg?e=jLRfhW"
+                            class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank" rel="noopener noreferrer">Sección
+                            1.6
+                            de
+                            la cartilla (Expresiones racionales)</a>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center mb-1">
+                        <img src="img/icon-2.svg" class="icon-p" alt="" />
+                        <div class="enlaces">
+                          <a href="https://bloqueneon.uniandes.edu.co/d2l/le/lessons/210621/topics/1614841"
+                            class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank" rel="noopener noreferrer">Taller
+                            4</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4 px-4">
+                      <div class="card rounded-4">
+                        <div class="card-body text-center">
+                          <h4>¿Ya exploraste los recursos?</h4>
+                          <p>Ahora planea cuáles te ayudarán a alcanzar tus metas:</p>
+                          <a href="https://bloqueneon.uniandes.edu.co/d2l/le/lessons/210621/topics/1624672" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-orange rounded-pill my-1 py-2 px-4">Planea tus acciones</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="p5-tab-pane" role="tabpanel" aria-labelledby="p5-tab">
+                <div id="P5">
+                  <div class="row">
+                    <div class="col-8">
+                      <div class="d-flex align-items-center mb-1">
+                        <img src="img/icon-1.svg" class="icon-p" alt="" />
+                        <div class="enlaces">
+                          <a href="https://uniandes-my.sharepoint.com/:b:/g/personal/ayudaprofconectate_uniandes_edu_co/EeGVIHbyS0hAtvQ-42GmIh4Bdmciy_Nh3o9jfPaVHeSXFg?e=jLRfhW"
+                            class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank" rel="noopener noreferrer">Sección
+                            1.4
+                            (Polinomios) ejercicios adicional: 4</a>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center mb-1">
+                        <img src="img/icon-2.svg" class="icon-p" alt="" />
+                        <div class="enlaces">
+                          <a href="https://bloqueneon.uniandes.edu.co/d2l/le/lessons/210621/topics/1614840"
+                            class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank" rel="noopener noreferrer">Taller 3:
+                            ejercicios 2, 3 y 7</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4 px-4">
+                      <div class="card rounded-4">
+                        <div class="card-body text-center">
+                          <h4>¿Ya exploraste los recursos?</h4>
+                          <p>Ahora planea cuáles te ayudarán a alcanzar tus metas:</p>
+                          <a href="https://bloqueneon.uniandes.edu.co/d2l/le/lessons/210621/topics/1624672" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-orange rounded-pill my-1 py-2 px-4">Planea tus acciones</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <!-- espacio decanatura -->
+        <section>
+          <section class="divisor py-3">
+            <h3 class="m-0 text-center text-white">REVISA ESTA INFORMACIÓN, ¡ES IMPORTANTE PARA TU PROCESO DE
+              APRENDIZAJE!
+            </h3>
+          </section>
+          <section class="bck-1">
+            <div class="row">
+              <div class="col-2 pt-5 pb-3 ps-5">
+                <img src="img/person.svg" alt="" class="img-fluid" />
+              </div>
+              <div class="col-8 pt-5 pb-3 px-0">
+                <p>
+                  Queremos apoyarte en este proceso y para conocerte mejor realizaste previamente la prueba “Déjanos
+                  saber
+                  de
+                  ti”. En esta evaluamos tres
+                  aspectos que son fundamentales y deben cultivarse para alcanzar el camino del éxito en la universidad:
+                </p>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="badge my-2 text-white">Tus hábitos y estrategias de estudio</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="badge my-2 text-white">Tus habilidades para el manejo de emociones</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="badge my-2 text-white">Cómo percibes las relaciones y apoyo social con los que cuentas
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  Basándonos en los resultados, recomendamos esta serie de recursos que te permitirán identificar tus
+                  fortalezas y puntos de mejora para
+                  tomar mejores decisiones y así alcanzar tus metas.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="bck-2">
+            <section class="destacado p-5 text-center text-white">
+              <h3>No te preocupes si no sabes por dónde empezar,</h3>
+              <p>
+                sugerimos que inicies por aprender a planear y gestionar el tiempo, revisa este artículo que hemos
+                preparado
+                para estudiantes como tú:
+              </p>
+              <div class="enlace">
+                <img src="img/icon-enlace.svg" alt="" />
+                <a href="https://comunidadorion.uniandes.edu.co/en-que-se-nos-va-el-tiempo/"
+                  class="btn btn-orange rounded-3" target="_blank" rel="noopener noreferrer">
+                  ¿En qué se nos va el tiempo?
+                </a>
+              </div>
+            </section>
+            <section class="px-5 py-3">
+              <p class="mx-5">¿Te pareció útil? Ahora que ya tienes una mejor idea de cómo manejar mejor el tiempo,
+                puedes
+                revisar estos contenidos:</p>
+              <div class="row">
+                <div class="col-6">
+                  <div class="card card-orange my-3 rounded-4">
+                    <div class="card-body text-center">
+                      <p>
+                        Agéndate para el taller de manejo del <br />
+                        tiempo
+                      </p>
+                      <a href="https://evento.uniandes.edu.co/es/ciclo-2-un-reloj-no-te-da-mas-tiempo-2023-2"
+                        target="_blank" rel="noopener noreferrer"
+                        class="btn btn-orange rounded-pill my-3 py-2 px-4">Agendar</a>
+                    </div>
+                  </div>
+                  <div class="card card-orange my-3 rounded-4">
+                    <div class="card-body text-center">
+                      <p>
+                        Practica con estos ejercicios: “Tener metas claras <br />
+                        aumenta nuestra motivación en el día a día”
+                      </p>
+                      <a href="https://comunidadorion.uniandes.edu.co/atrevete-a-lograr-tus-metas/" target="_blank"
+                        rel="noopener noreferrer" class="btn btn-orange rounded-pill my-3 py-2 px-4">Practicar</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="card card-orange my-3 rounded-4">
+                    <div class="card-body text-center">
+                      <p>
+                        Revisa esta infografía: “Preparar tus exámenes <br />
+                        con tiempo te ayudará a tener mejores”
+                      </p>
+                      <a href="https://comunidadorion.uniandes.edu.co/preparacion-de-examenes/" target="_blank"
+                        rel="noopener noreferrer" class="btn btn-orange rounded-pill my-3 py-2 px-4">Revisar</a>
+                    </div>
+                  </div>
+                  <div class="card card-orange my-3 rounded-4">
+                    <div class="card-body text-center">
+                      <p>
+                        Lee este artículo: “Frustrarse en el proceso de <br />
+                        aprendizaje es necesario”
+                      </p>
+                      <a href="https://agora.uniandes.edu.co/aceptate-y-crece-a-traves-de-la-autocompasion/"
+                        target="_blank" rel="noopener noreferrer"
+                        class="btn btn-orange rounded-pill my-3 py-2 px-4">Leer</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div id="Deca1" class="card-body">
+              <section class="destacado p-5 text-center text-white">
+                <h3>Para mejorar tus hábitos de estudio te hemos preparado estas recomendaciones:</h3>
+                <div class="enlace">
+                  <a href="https://comunidadorion.uniandes.edu.co/aumenta-la-productividad-en-la-u-con-las-5s/"
+                    class="btn btn-orange rounded-3" target="_blank" rel="noopener noreferrer">
+                    Aumenta la productividad en la U
+                  </a>
+                </div>
+              </section>
+              <section class="px-5 py-3">
+                <p class="mx-5">
+                  ¿Te sirvieron las recomendaciones? Ahora que ya conoces algunos hábitos para ser más eficiente al
+                  momento
+                  de
+                  estudiar, revisa los demás
+                  recursos:
+                </p>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="card card-orange my-3 rounded-4">
+                      <div class="card-body text-center">
+                        <p>
+                          Conoce qué estrategias de aprendizaje <br />
+                          puedes aplicar
+                        </p>
+                        <a href="https://comunidadorion.uniandes.edu.co/estrategias-de-aprendizaje/" target="_blank"
+                          rel="noopener noreferrer" class="btn btn-orange rounded-pill my-3 py-2 px-4">Conocer</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card card-orange my-3 rounded-4">
+                      <div class="card-body text-center">
+                        <p>
+                          Prueba estos mecanismos <br />
+                          de aprendizaje
+                        </p>
+                        <a href="https://comunidadorion.uniandes.edu.co/mecanismos-de-aprendizaje/" target="_blank"
+                          rel="noopener noreferrer" class="btn btn-orange rounded-pill my-3 py-2 px-4">Probar</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div id="Deca2" class="card-body">
+              <section class="destacado p-5 text-center text-white">
+                <h3>
+                  Conocer personas nuevas y construir relaciones en esta etapa puede ser retador por eso diseñamos este
+                  podcast que te dará algunas
+                  herramientas:
+                </h3>
+                <div class="enlace">
+                  <a href="https://agora.uniandes.edu.co/codigo-agora/" class="btn btn-orange rounded-3" target="_blank"
+                    rel="noopener noreferrer">
+                    Conectados en pospandemia
+                  </a>
+                </div>
+              </section>
+              <section class="px-5 py-3">
+                <p class="mx-5">
+                  ¿Te sirvieron las recomendaciones? Ahora que ya conoces algunas herramientas para mejorar tus
+                  relaciones,
+                  revisa los demás recursos:
+                </p>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="card card-orange my-3 rounded-4">
+                      <div class="card-body text-center">
+                        <p>
+                          Conoce grupos de estudiantes que <br />
+                          comparten diferentes intereses ¡anímate!
+                        </p>
+                        <a href="https://decanaturadeestudiantes.uniandes.edu.co/plus/formacion-iniciativas-estudiantiles"
+                          target="_blank" rel="noopener noreferrer"
+                          class="btn btn-orange rounded-pill my-3 py-2 px-4">Conectar</a>
+                      </div>
+                    </div>
+                    <div class="card card-orange my-3 rounded-4">
+                      <div class="card-body text-center">
+                        <p>
+                          Prueba estos consejos para tratar algunos <br />
+                          temas con tu familia
+                        </p>
+                        <a href="https://agora.uniandes.edu.co/nuevo-en-la-u-habla-con-tus-papas-sobre-estos-temas/"
+                          target="_blank" rel="noopener noreferrer"
+                          class="btn btn-orange rounded-pill my-3 py-2 px-4">Probar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card card-orange my-3 rounded-4">
+                      <div class="card-body text-center">
+                        <p>
+                          Amplia tu círculo de apoyo con los <br />
+                          embajadores de bienestar
+                        </p>
+                        <a href="https://agora.uniandes.edu.co/embajadores-de-bienestar/" target="_blank"
+                          rel="noopener noreferrer" class="btn btn-orange rounded-pill my-3 py-2 px-4">Inscribirse</a>
+                      </div>
+                    </div>
+                    <div class="card card-orange my-3 rounded-4">
+                      <div class="card-body text-center">
+                        <p>
+                          Monitorear tu motivación, te ayudará en tus <br />
+                          procesos de aprendizaje
+                        </p>
+                        <a href="https://comunidadorion.uniandes.edu.co/motivacion-en-la-universidad/" target="_blank"
+                          rel="noopener noreferrer" class="btn btn-orange rounded-pill my-3 py-2 px-4">Monitorear</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div id="Deca3" class="card-body">
+              <section class="destacado p-5 text-center text-white">
+                <h3>
+                  Queremos que en tu paso por la universidad encuentres diferentes formas de enfrentar los desafios,
+                  para
+                  esto
+                  te sugerimos descargar esta
+                  app donde encontratrás algunos ejercicios efectivos y rápidos:
+                </h3>
+                <div class="enlace">
+                  <a href="https://ghdo.uniandes.edu.co/wp-content/uploads/2023/07/Guia-para-descargar-ExpiWell_UV_.pdf"
+                    class="btn btn-orange rounded-3" target="_blank" rel="noopener noreferrer">
+                    Conoce Expiwell
+                  </a>
+                </div>
+              </section>
+              <section class="px-5 py-3">
+                <p class="mx-5">
+                  ¿Te sirvieron las recomendaciones? Ahora que ya conoces algunas herramientas para reducir el estrés,
+                  revisa
+                  los demás recursos:
+                </p>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="card card-orange my-3 rounded-4">
+                      <div class="card-body text-center">
+                        <p>
+                          Aprende a regular <br />
+                          tus emociones
+                        </p>
+                        <a href="https://agora.uniandes.edu.co/autorregulacion-una-habilidad-para-la-vida/"
+                          target="_blank" rel="noopener noreferrer"
+                          class="btn btn-orange rounded-pill my-3 py-2 px-4">Aprender</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="card card-orange my-3 rounded-4">
+                      <div class="card-body text-center">
+                        <p>Explora esta guía para hacer uso eficiente de tu tiempo</p>
+                        <a href="https://comunidadorion.uniandes.edu.co/mecanismos-de-aprendizaje/" target="_blank"
+                          rel="noopener noreferrer" class="btn btn-orange rounded-pill my-3 py-2 px-4">Explorar</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </section>
+          <section class="bck-2">
+            <div class="row">
+              <div class="col-4 offset-8 px-4">
+                <div class="card rounded-4">
+                  <div class="card-body text-center">
+                    <h4>¿Ya exploraste los recursos?</h4>
+                    <p>Ahora planea cuáles te ayudarán a alcanzar tus metas:</p>
+                    <a href="https://bloqueneon.uniandes.edu.co/d2l/le/lessons/210621/topics/1624672" target="_blank" rel="noopener noreferrer"
+                      class="btn btn-orange rounded-pill my-1 py-2 px-4">Planea tus acciones</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
       </div>
-    </section>
+      <!-- espacio matemáticas ecuaciones y desigualdades -->
+      <div class="tab-pane fade" id="ecu-tab-pane" role="tabpanel" aria-labelledby="ecu-tab-pane" tabindex="0">
+        <!-- Sección instruciones álgebra -->
+        <section class="notes my-4">
+          <h4>Aquí podrás:</h4>
+          <p>Revisar tus resultados de la prueba diagnóstica de los módulos. Además, para el módulo 2 “Ecuaciones y
+            desigualdades”, podrás:</p>
+          <ol>
+            <li>
+              Realizar el cuestionario "<strong>¿Cómo empiezo la semana?</strong>" para evaluar tus conocimientos
+              previos y explorar posibilidades para planificar tus acciones.
+            </li>
+            <li>
+              Ver tu retroalimentación basada en los resultados.
+            </li>
+            <li>
+              Realizar el cuestionario "<strong>¿Cómo finalizo la semana?</strong>" para identificar tus aprendizajes y
+              explorar recomendaciones según tu desempeño.
+            </li>
+            <li>
+              Descubrir consejos y recursos para mejorar tu experiencia universitaria y practicar el autocuidado.
+            </li>
+          </ol>
+        </section>
+        <!-- Sección Pre Quiz -->
+        <section class="estado my-4 mx-3">
+          <article class="prequiz row py-3 ">
+            <div class="col-12">
+              <ul class=" nav nav-tabs botonera d-flex justify-content-center align-content-center flex-wrap"
+                id="Semana-nav-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="btn rounded-pill mt-1 px-4 me-2 d-flex align-items-center" id="btnIniSem1"
+                    data-bs-toggle="tab" data-bs-target="#sem1-ini-tab-pane" aria-expanded="false"
+                    aria-controls="sem1-ini-tab-pane" type="button" onclick="changeImg(1)" disabled>Semana 1</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="btn rounded-pill mt-1 px-4 me-2 d-flex align-items-center" id="btnIniSem2"
+                    data-bs-toggle="tab" data-bs-target="#sem2-ini-tab-pane" role="tab"
+                    aria-controls="sem2-ini-tab-pane" aria-selected="true" type="button" onclick="changeImg(2)"
+                    disabled>Semana 2</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="btn rounded-pill mt-1 px-4 me-2 d-flex align-items-center" id="btnIniSem3"
+                    data-bs-toggle="tab" data-bs-target="#sem3-ini-tab-pane" role="tab" aria-controls="sem3-tab-pane"
+                    aria-selected="true" type="button" onclick="changeImg(3)" disabled>Semana 3</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="btn rounded-pill mt-1 px-4 me-2 d-flex align-items-center" id="btnIniSem4"
+                    data-bs-toggle="tab" data-bs-target="#sem4-ini-tab-pane" role="tab"
+                    aria-controls="sem4-ini-tab-pane" aria-selected="true" type="button" onclick="changeImg(4)"
+                    disabled>Semana 4</button>
+                </li>
+              </ul>
+            </div>
+            <article class="col-12 pt-4">
+              <div class="row">
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade" id="sem1-ini-tab-pane" role="tabpanel" aria-labelledby="sem1-ini-tab"
+                    tabindex="0">
+                    <div class="row">
+                      <div class="col-4">
+                        <h3 class="mb-0 orange">¿Cómo voy a empezar la semana?:</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <p class="text-orange">Cada semana, accede al cuestionario para evaluar tus conocimientos
+                          previos
+                          sobre el tema y explora los recursos de recomendación para planear tus acciones.</p>
+                      </div>
+                      <div class="col-4">
+                        <a href="" id="btnIni1" class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank"
+                          rel="noopener noreferrer">Cuestionario cómo empiezo</a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <p>Conoce cómo volver a las posibilidades y los recursos: <a class="enlace"
+                            href="https://web.microsoftstream.com/video/15164f3e-1897-4e22-b815-a92a00c6aa01?channelId=ebecb0df-56d1-4ae2-88cb-5bbd1b10f93a"
+                            target="_blank" rel="noopener noreferrer">Click aquí</a></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-4">
+                        <h3 class="mb-0 blue">¿Cómo finalizo la semana?:</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <p class="text-blue">Cada semana, accede al cuestionario y conoce tus logros.</p>
+                      </div>
+                      <div class="col-4">
+                        <a href="" id="btnFin1" class="rounded-pill btn-blue my-1 py-2 px-4 ms-2" target="_blank"
+                          rel="noopener noreferrer">Cuestionario cómo finalizo</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="sem2-ini-tab-pane" role="tabpanel" aria-labelledby="sem2-ini-tab"
+                    tabindex="0">
+                    <div class="row">
+                      <div class="col-4">
+                        <h3 class="mb-0 orange">¿Cómo voy a empezar la semana?:</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <p class="text-orange">Cada semana, accede al cuestionario para evaluar tus conocimientos
+                          previos
+                          sobre el tema y explora los recursos de recomendación para planear tus acciones.</p>
+                      </div>
+                      <div class="col-4">
+                        <a href="" id="btnIni2" class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank"
+                          rel="noopener noreferrer">Cuestionario cómo empiezo</a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <p>Conoce cómo volver a las posibilidades y los recursos: <a class="enlace"
+                            href="https://web.microsoftstream.com/video/15164f3e-1897-4e22-b815-a92a00c6aa01?channelId=ebecb0df-56d1-4ae2-88cb-5bbd1b10f93a"
+                            target="_blank" rel="noopener noreferrer">Click aquí</a></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-4">
+                        <h3 class="mb-0 blue">¿Cómo finalizo la semana?:</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <p class="text-blue">Cada semana, accede al cuestionario y conoce tus logros.</p>
+                      </div>
+                      <div class="col-4">
+                        <a href="" id="btnFin2" class="rounded-pill btn-blue my-1 py-2 px-4 ms-2" target="_blank"
+                          rel="noopener noreferrer">Cuestionario cómo finalizo</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="sem3-ini-tab-pane" role="tabpanel" aria-labelledby="sem3-ini-tab"
+                    tabindex="0">
+                    <div class="row">
+                      <div class="col-4">
+                        <h3 class="mb-0 orange">¿Cómo voy a empezar la semana?:</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <p class="text-orange">Cada semana, accede al cuestionario para evaluar tus conocimientos
+                          previos
+                          sobre el tema y explora los recursos de recomendación para planear tus acciones.</p>
+                      </div>
+                      <div class="col-4">
+                        <a href="" id="btnIni3" class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank"
+                          rel="noopener noreferrer">Cuestionario cómo empiezo</a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <p>Conoce cómo volver a las posibilidades y los recursos: <a class="enlace"
+                            href="https://web.microsoftstream.com/video/15164f3e-1897-4e22-b815-a92a00c6aa01?channelId=ebecb0df-56d1-4ae2-88cb-5bbd1b10f93a"
+                            target="_blank" rel="noopener noreferrer">Click aquí</a></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-4">
+                        <h3 class="mb-0 blue">¿Cómo finalizo la semana?:</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <p class="text-blue">Cada semana, accede al cuestionario y conoce tus logros.</p>
+                      </div>
+                      <div class="col-4">
+                        <a href="" id="btnFin3" class="rounded-pill btn-blue my-1 py-2 px-4 ms-2" target="_blank"
+                          rel="noopener noreferrer">Cuestionario cómo finalizo</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="sem4-ini-tab-pane" role="tabpanel" aria-labelledby="sem4-ini-tab"
+                    tabindex="0">
+                    <div class="row">
+                      <div class="col-4">
+                        <h3 class="mb-0 orange">¿Cómo voy a empezar la semana?:</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <p class="text-orange">Cada semana, accede al cuestionario para evaluar tus conocimientos
+                          previos
+                          sobre el tema y explora los recursos de recomendación para planear tus acciones.</p>
+                      </div>
+                      <div class="col-4">
+                        <a href="" id="btnIni4" class="rounded-pill my-1 py-2 px-4 ms-2" target="_blank"
+                          rel="noopener noreferrer">Cuestionario cómo empiezo</a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <p>Conoce cómo volver a las posibilidades y los recursos: <a class="enlace"
+                            href="https://web.microsoftstream.com/video/15164f3e-1897-4e22-b815-a92a00c6aa01?channelId=ebecb0df-56d1-4ae2-88cb-5bbd1b10f93a"
+                            target="_blank" rel="noopener noreferrer">Click aquí</a></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-4">
+                        <h3 class="mb-0 blue">¿Cómo finalizo la semana?:</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-8">
+                        <p class="text-blue">Cada semana, accede al cuestionario y conoce tus logros.</p>
+                      </div>
+                      <div class="col-4">
+                        <a href="" id="btnFin4" class="rounded-pill btn-blue my-1 py-2 px-4 ms-2" target="_blank"
+                          rel="noopener noreferrer">Cuestionario cómo finalizo</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </article>
+        </section>
+        <!-- Sección imagenes de progreso -->
+        <section>
+          <h2 class="black">Mi progreso en la semana</h2>
+          <article class="row pt-3 px-3">
+            <div class="col-6 px-5">
+              <img id="imgIni" src="" class="img-fluid" alt="">
+            </div>
+            <div class="col-6 px-5 border-left">
+              <img id="imgFin" src="" class="img-fluid" alt="">
+            </div>
+          </article>
+        </section>
+        <!-- Sección destacado -->
+        <section class="destacado p-5 text-center text-white">
+          <div class="row">
+            <div class="col-10 offset-1 d-flex justify-content-around align-items-center">
+              <h1 class="mb-0">¿Ya exploraste los recursos?</h1>
+              <a href="https://bloqueneon.uniandes.edu.co/d2l/le/lessons/210621/topics/1624672" class="btn active rounded-pill mt-1 px-4 me-2 d-flex align-items-center" target="_blank"
+                rel="noopener noreferrer">Planea tus acciones</a>
+            </div>
+          </div>
+        </section>
+        <!-- Sección Deca -->
+        <section class="img-section my-4">
+
+          <div id="fondoSem1" class="urlFondoSem ">
+            <div class="row">
+              <div class="col-10 offset-1 py-3">
+                <img id="msgSem1" src="img/msgSem1.svg" class="img-fluid" alt="">
+              </div>
+              <div class="col-12">
+                <a href="https://www.spreaker.com/user/uniandes/podcast-autocompasion?utm_campaign=episode-title&utm_medium=app&utm_source=widget"
+                  target="_blank" rel="noopener noreferrer">
+                  <img id="bckSem1" src="img/bckSem1.svg" class="img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="fondoSem2" class="urlFondoSem hide">
+            <div class="row">
+              <div class="col-10 offset-1 py-3">
+                <img id="msgSem1" src="img/msgSem2.svg" class="img-fluid" alt="">
+              </div>
+              <div class="col-12">
+                <a href="https://evento.uniandes.edu.co/es/cultiva-un-jardin-de-amor" target="_blank"
+                  rel="noopener noreferrer">
+                  <img id="fondoSem" src="img/bckSem2.svg" class="img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="fondoSem3" class="urlFondoSem hide">
+            <div class="row">
+              <div class="col-10 offset-1 py-3">
+                <img id="msgSem1" src="img/msgSem3.svg" class="img-fluid" alt="">
+              </div>
+              <div class="col-12">
+                <a href="https://ghdo.uniandes.edu.co/wp-content/uploads/2023/07/Guia-para-descargar-ExpiWell_UV_.pdf"
+                  target="_blank" rel="noopener noreferrer">
+                  <img id="fondoSem" src="img/bckSem3.svg" class="img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="fondoSem4" class="urlFondoSem hide">
+            <div class="row">
+              <div class="col-10 offset-1 py-3">
+                <img id="msgSem1" src="img/msgSem4.svg" class="img-fluid" alt="">
+              </div>
+              <div class="col-12">
+                <a href="https://comunidadorion.uniandes.edu.co/preparacion-de-examenes/" target="_blank"
+                  rel="noopener noreferrer">
+                  <img id="fondoSem" src="img/bckSem4.svg" class="img-fluid" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- espacio matemáticas funciones -->
+      <div class="tab-pane fade" id="fun-tab-pane" role="tabpanel" aria-labelledby="fun-tab-pane" tabindex="0">...
+      </div>
+      <!-- espacio matemáticas trigonometría -->
+      <div class="tab-pane fade" id="tri-tab-pane" role="tabpanel" aria-labelledby="tri-tab-pane" tabindex="0">...
+      </div>
+    </div>
   </main>
 
   <script type="text/javascript" src="data.json"></script>
+  <script type="text/javascript" src="main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
