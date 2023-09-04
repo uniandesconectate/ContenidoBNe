@@ -40,7 +40,6 @@ function compareDate(today, weeksData) {
       replaceUrl(weeksData[i].cuestionarios.urlInicio, i, "Ini");
     }
     if (fechaFin <= today) {
-      activeButtons(i, "Fin");
       replaceUrl(weeksData[i].cuestionarios.urlFin, i, "Fin");
     }
   }
@@ -99,32 +98,21 @@ function activeOnLoadButtons(sem) {
   const selectedData = getData();
 
   const semIni = `btnIniSem${sem}`;
-  const semFin = `btnFinSem${sem}`;
 
   if (selectedData) {
     const btnIni = document.getElementById(semIni);
-    const btnFin = document.getElementById(semFin);
     const paneIni = document.getElementById(`sem${sem}-ini-tab-pane`);
-    const paneFin = document.getElementById(`sem${sem}-fin-tab-pane`);
 
     if (btnIni.classList.contains("disabled")) {
       btnIni.classList.remove("disabled");
       btnIni.classList.add("active");
       btnIni.setAttribute("aria-expanded", "true");
       paneIni.classList.add("fade", "show", "active");
-      btnFin.classList.remove("disabled");
-      btnFin.classList.add("active");
-      btnFin.setAttribute("aria-expanded", "true");
-      paneFin.classList.add("fade", "show", "active");
     } else {
       btnIni.removeAttribute("disabled");
       btnIni.classList.add("active");
       btnIni.setAttribute("aria-expanded", "true");
       paneIni.classList.add("fade", "show", "active");
-      btnFin.removeAttribute("disabled");
-      btnFin.classList.add("active");
-      btnFin.setAttribute("aria-expanded", "true");
-      paneFin.classList.add("fade", "show", "active");
     }
   }
 }

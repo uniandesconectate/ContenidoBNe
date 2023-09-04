@@ -148,7 +148,7 @@ a.enlace {
   border-bottom: 1px solid var(--accent-color);
 }
 
-a.urlFondoSem {
+.urlFondoSem a {
   border: 0;
   display: block;
 }
