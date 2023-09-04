@@ -1,4 +1,141 @@
-// functions.js
+window.addEventListener("load", () => {
+  const seccion = document.querySelector("#bnSeccion").value;
+  const today = getDate();
+  getSeccionData(seccion, today);
+});
+
+// Obtner la fecha actual y formatearla
+function getDate() {
+  const today = Date.now();
+  return today;
+}
+
+// obtener los datos de la sección del JSON
+function getSeccionData(seccion, today) {
+  let seccionesData = {};
+  const url = "semanas.json";
+  const data = fetch(url);
+  data
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then((data) => {
+      seccionesData = data;
+      const seccionData = seccionesData[seccion];
+      compareDate(today, seccionData);
+    });
+}
+
+// Función para comparar la fecha actual con las fechas de inicio y fin de cada semana, activar los botones y cambiar las url
+function compareDate(today, weeksData) {
+  const lenght = Object.keys(weeksData).length;
+  for (let i = 1; i <= lenght; i++) {
+    let fechaInicio = formatDate(weeksData[i].fechaInicio);
+    let fechaFin = formatDate(weeksData[i].fechaFin);
+    if (fechaInicio <= today) {
+      activeButtons(i, "Ini");
+      replaceUrl(weeksData[i].cuestionarios.urlInicio, i, "Ini");
+    } else {
+      replaceUrl("#", i, "Ini");
+    }
+    if (fechaFin <= today) {
+      activeButtons(i, "Fin");
+      replaceUrl(weeksData[i].cuestionarios.urlFin, i, "Fin");
+    } else {
+      replaceUrl("#", i, "Fin");
+    }
+  }
+}
+
+// función para formatear fecha
+function formatDate(dateString) {
+  const dt = dateString.split(/\-|\s/);
+  const date = new Date(dt.slice(0, 3).reverse().join("-") + " " + dt[3]);
+  return date;
+}
+
+// Función para activar los botones de inicio y fin de semana
+function activeButtons(id, elem) {
+  let element = `btn${elem}Sem${id}`;
+  let btn = document.getElementById(element);
+  if (elem === "Ini") {
+    if (btn.classList.contains("disabled")) {
+      btn.classList.remove("disabled");
+    } else {
+      btn.removeAttribute("disabled");
+    }
+  }
+}
+
+// Función para cambiar la url del botón pre quiz y quiz
+function replaceUrl(url, id, elem) {
+  let element = `btn${elem}${id}`;
+  let btn = document.getElementById(element);
+  if (btn) {
+    btn.setAttribute("href", url);
+  }
+  if (url == "#") {
+    btn.classList.add("disabled");
+  }
+}
+
+function getData() {
+  const selectElement = document.getElementById("miSelect");
+  const selectedId = selectElement.value;
+  // Busca el elemento en los datos del JSON
+  const selectedData = data.find((item) => item.id === selectedId);
+
+  return selectedData;
+}
+
+function changeImg(sem) {
+  const selectedData = getData();
+
+  const semIni = `S${sem}Inicio`;
+  const semFin = `S${sem}Fin`;
+  if (selectedData) {
+    document.getElementById(`imgIni`).src = `img/img${selectedData[semIni]}Ini.svg`;
+    document.getElementById(`imgFin`).src = `img/img${selectedData[semFin]}Fin.svg`;
+  }
+
+  changeDecaImg(sem);
+}
+
+function activeOnLoadButtons(sem) {
+  const selectedData = getData();
+
+  const semIni = `btnIniSem${sem}`;
+
+  if (selectedData) {
+    const btnIni = document.getElementById(semIni);
+    const paneIni = document.getElementById(`sem${sem}-ini-tab-pane`);
+
+    if (btnIni.classList.contains("disabled")) {
+      btnIni.classList.remove("disabled");
+      btnIni.classList.add("active");
+      btnIni.setAttribute("aria-expanded", "true");
+      paneIni.classList.add("fade", "show", "active");
+    } else {
+      btnIni.removeAttribute("disabled");
+      btnIni.classList.add("active");
+      btnIni.setAttribute("aria-expanded", "true");
+      paneIni.classList.add("fade", "show", "active");
+    }
+  }
+}
+
+function changeDecaImg(sem) {
+  const fodosSemana = document.querySelectorAll(".urlFondoSem");
+  fodosSemana.forEach((fondoSem) => {
+    fondoSem.classList.remove("show");
+    fondoSem.classList.add("hide");
+  });
+  document.getElementById(`fondoSem${sem}`).classList.add("show");
+  document.getElementById(`fondoSem${sem}`).classList.remove("hide");
+}
 
 // Función para mostrar los datos correspondientes al cambio en el select
 function mostrarDatos() {
@@ -8,13 +145,17 @@ function mostrarDatos() {
   // Busca el elemento en los datos del JSON
   const selectedData = data.find((item) => item.id === selectedId);
 
+  changeImg("1");
+  activeOnLoadButtons("1");
+  changeDecaImg("1");
+
   // Mostrar contenido correspondiente a Decanatura
   document.getElementById("Deca1").style.display = selectedData.Deca1 === "1" ? "block" : "none";
   document.getElementById("Deca2").style.display = selectedData.Deca2 === "1" ? "block" : "none";
   document.getElementById("Deca3").style.display = selectedData.Deca3 === "1" ? "block" : "none";
 
   // Mostrar imagen correspondiente a Matemáticas
-  document.getElementById(`imagen`).src = `img/foto${selectedData.imagen}.svg`;
+  document.getElementById(`imagen`).src = `img/foto${selectedData.Imagen}.svg`;
 
   // Mostrar contenido correspondiente a P1 y P2
   document.getElementById("P1").style.display = selectedData.P1 === "1" ? "block" : "none";
