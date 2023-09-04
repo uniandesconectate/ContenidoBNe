@@ -38,9 +38,14 @@ function compareDate(today, weeksData) {
     if (fechaInicio <= today) {
       activeButtons(i, "Ini");
       replaceUrl(weeksData[i].cuestionarios.urlInicio, i, "Ini");
+    } else {
+      replaceUrl("#", i, "Ini");
     }
     if (fechaFin <= today) {
+      activeButtons(i, "Fin");
       replaceUrl(weeksData[i].cuestionarios.urlFin, i, "Fin");
+    } else {
+      replaceUrl("#", i, "Fin");
     }
   }
 }
@@ -56,10 +61,12 @@ function formatDate(dateString) {
 function activeButtons(id, elem) {
   let element = `btn${elem}Sem${id}`;
   let btn = document.getElementById(element);
-  if (btn.classList.contains("disabled")) {
-    btn.classList.remove("disabled");
-  } else {
-    btn.removeAttribute("disabled");
+  if (elem === "Ini") {
+    if (btn.classList.contains("disabled")) {
+      btn.classList.remove("disabled");
+    } else {
+      btn.removeAttribute("disabled");
+    }
   }
 }
 
@@ -69,6 +76,9 @@ function replaceUrl(url, id, elem) {
   let btn = document.getElementById(element);
   if (btn) {
     btn.setAttribute("href", url);
+  }
+  if (url == "#") {
+    btn.classList.add("disabled");
   }
 }
 
