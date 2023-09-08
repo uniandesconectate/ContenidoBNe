@@ -77,9 +77,9 @@ function replaceUrl(url, id, elem) {
   if (btn) {
     btn.setAttribute("href", url);
   }
-  if (url == "#") {
+  /* if (url == "#") {
     btn.classList.add("disabled");
-  }
+  } */
 }
 
 function getData() {
