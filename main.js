@@ -161,8 +161,6 @@ function showRecursos(sem) {
         video.classList.remove("hide");
       }
 
-      console.log(fechaFin);
-      console.log(today);
       if (fechaFin <= today) {
         if (recursos.classList.contains("hide")) {
           recursos.classList.remove("hide");
