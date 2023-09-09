@@ -26,6 +26,7 @@ function getSeccionData(seccion, today) {
       seccionesData = data;
       const seccionData = seccionesData[seccion];
       compareDate(today, seccionData);
+      return seccionData;
     });
 }
 
@@ -77,9 +78,9 @@ function replaceUrl(url, id, elem) {
   if (btn) {
     btn.setAttribute("href", url);
   }
-  if (url == "#") {
+  /* if (url == "#") {
     btn.classList.add("disabled");
-  }
+  } */
 }
 
 function getData() {
@@ -102,6 +103,72 @@ function changeImg(sem) {
   }
 
   changeDecaImg(sem);
+  showRecursos(sem);
+}
+
+function showRecursos(sem) {
+  const seccion = document.querySelector("#bnSeccion").value;
+  const recursos = document.querySelector("#recursos");
+  const maratonSalon = document.getElementById(`maratonSalon`);
+  const maratonHorario = document.getElementById(`maratonHorario`);
+  const maratonUrl = document.getElementById(`maratonUrl`);
+  const atencionDias = document.getElementById(`atencionDias`);
+  const atencionHorario = document.getElementById(`atencionHorario`);
+  const atencionCorreo = document.getElementById(`atencionCorreo`);
+  const urlMatematicas = document.getElementById(`urlMatematicas`);
+  const tallerFecha = document.getElementById(`tallerFecha`);
+  const tallerHorario = document.getElementById(`tallerHorario`);
+  const tallerSalon = document.getElementById(`tallerSalon`);
+  const tallerUrl = document.getElementById(`tallerUrl`);
+  const videos = document.querySelectorAll(".videos");
+  const video = document.getElementById(`videos-${sem}`);
+
+  let seccionesData = {};
+  const url = "semanas.json";
+  const data = fetch(url);
+  data
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then((data) => {
+      const today = getDate();
+      seccionesData = data;
+      const selectedData = seccionesData[seccion];
+      let fechaFin = formatDate(selectedData[sem].fechaFin);
+
+      maratonSalon.innerHTML = selectedData[sem].recursos.maraton.salon;
+      maratonHorario.innerHTML = selectedData[sem].recursos.maraton.horario;
+      maratonUrl.setAttribute("href", selectedData[sem].recursos.maraton.urlFormulario);
+      atencionDias.innerHTML = selectedData[sem].recursos.atencionDoc.dias;
+      atencionHorario.innerHTML = selectedData[sem].recursos.atencionDoc.horario;
+      atencionCorreo.innerHTML = selectedData[sem].recursos.atencionDoc.correo;
+      urlMatematicas.setAttribute("href", selectedData[sem].recursos.urlDocMatematicas);
+      tallerFecha.innerHTML = selectedData[sem].recursos.taller.fecha;
+      tallerHorario.innerHTML = selectedData[sem].recursos.taller.horario;
+      tallerSalon.innerHTML = selectedData[sem].recursos.taller.salon;
+      tallerUrl.setAttribute("href", selectedData[sem].recursos.taller.urlInscripcion);
+
+      videos.forEach((vid) => {
+        if (!vid.classList.contains("hide")) {
+          vid.classList.add("hide");
+        }
+      });
+
+      if (video.classList.contains("hide")) {
+        video.classList.remove("hide");
+      }
+
+      if (fechaFin <= today) {
+        if (recursos.classList.contains("hide")) {
+          recursos.classList.remove("hide");
+        }
+      } else if (!recursos.classList.contains("hide")) {
+        recursos.classList.add("hide");
+      }
+    });
 }
 
 function activeOnLoadButtons(sem) {

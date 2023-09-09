@@ -2,18 +2,56 @@
   "210618": {
     "1": {
       "fechaInicio": "04-09-2023 00:00:00",
-      "fechaFin": "01-12-2023 00:00:00",
+      "fechaFin": "08-09-2023 00:00:00",
       "cuestionarios": {
         "urlInicio": "https://bloqueneon.uniandes.edu.co/d2l/lms/quizzing/user/quiz_submissions.d2l?bp=1&isprv=&fromQB=&qi=181361&ou=210618",
         "urlFin": "https://bloqueneon.uniandes.edu.co/d2l/lms/quizzing/user/quiz_submissions.d2l?bp=1&isprv=&fromQB=&qi=176692&ou=210618"
+      },
+      "recursos": {
+        "maraton": {
+          "salon": "RGD-010",
+          "horario": "6:00 p.m. a 8:00 p.m.",
+          "urlFormulario": "https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=2eda21f4895a475da8da92e3805911bb&id=fAS9-kj_KkmLu4-YufucyizKPNzMWuNFg9CqqJGEajNURUhHOFYwOEFJMEhXME8zQTJUVTBPVUxFWC4u&topview=Preview"
+        },
+        "atencionDoc": {
+          "dias": "Lunes y viernes",
+          "horario": "6:30 a.m. a 8:00 a.m.",
+          "correo": "a.perez271@uniandes.edu.co"
+        },
+        "urlDocMatematicas": "#",
+        "taller": {
+          "fecha": "19 y 26 de septiembre",
+          "horario": "9:00 a.m. a 11:00 a.m.",
+          "salon": "O – 306",
+          "urlInscripcion": "https://evento.uniandes.edu.co/es/ciclo-2-un-reloj-no-te-da-mas-tiempo-2023-2"
+        }
       }
     },
     "2": {
-      "fechaInicio": "01-12-2023 00:00:00",
-      "fechaFin": "01-12-2023 00:00:00",
+      "fechaInicio": "08-09-2023 00:00:00",
+      "fechaFin": "11-09-2023 00:00:00",
       "cuestionarios": {
-        "urlInicio": "https:c2Inicio",
-        "urlFin": "https://c2Fin"
+        "urlInicio": "https://bloqueneon.uniandes.edu.co/d2l/lms/quizzing/user/quiz_summary.d2l?bp=1&isprv=1&qi=181362&ou=210618",
+        "urlFin": "https://bloqueneon.uniandes.edu.co/d2l/lms/quizzing/user/quiz_summary.d2l?bp=1&isprv=1&qi=176693&ou=210618"
+      },
+      "recursos": {
+        "maraton": {
+          "salon": "RGD-010",
+          "horario": "6:00 p.m. a 8:00 p.m.",
+          "urlFormulario": "https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=2eda21f4895a475da8da92e3805911bb&id=fAS9-kj_KkmLu4-YufucyizKPNzMWuNFg9CqqJGEajNURUhHOFYwOEFJMEhXME8zQTJUVTBPVUxFWC4u&topview=Preview"
+        },
+        "atencionDoc": {
+          "dias": "Lunes y viernes",
+          "horario": "6:30 a.m. a 8:00 a.m.",
+          "correo": "a.perez271@uniandes.edu.co"
+        },
+        "urlDocMatematicas": "#",
+        "taller": {
+          "fecha": "19 y 26 de septiembre",
+          "horario": "9:00 a.m. a 11:00 a.m.",
+          "salon": "O – 306",
+          "urlInscripcion": "https://evento.uniandes.edu.co/es/ciclo-2-un-reloj-no-te-da-mas-tiempo-2023-2"
+        }
       }
     },
     "3": {
@@ -22,6 +60,25 @@
       "cuestionarios": {
         "urlInicio": "https://c3Inicio",
         "urlFin": "https://c3Fin"
+      },
+      "recursos": {
+        "maraton": {
+          "salon": "RGD-010",
+          "horario": "6:00 p.m. a 8:00 p.m.",
+          "urlFormulario": "https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=2eda21f4895a475da8da92e3805911bb&id=fAS9-kj_KkmLu4-YufucyizKPNzMWuNFg9CqqJGEajNURUhHOFYwOEFJMEhXME8zQTJUVTBPVUxFWC4u&topview=Preview"
+        },
+        "atencionDoc": {
+          "dias": "Lunes y viernes",
+          "horario": "6:30 a.m. a 8:00 a.m.",
+          "correo": "a.perez271@uniandes.edu.co"
+        },
+        "urlDocMatematicas": "#",
+        "taller": {
+          "fecha": "19 y 26 de septiembre",
+          "horario": "9:00 a.m. a 11:00 a.m.",
+          "salon": "O – 306",
+          "urlInscripcion": "https://evento.uniandes.edu.co/es/ciclo-2-un-reloj-no-te-da-mas-tiempo-2023-2"
+        }
       }
     },
     "4": {
@@ -30,24 +87,81 @@
       "cuestionarios": {
         "urlInicio": "https://c4Inicio",
         "urlFin": "https://c4Fin"
+      },
+      "recursos": {
+        "maraton": {
+          "salon": "RGD-010",
+          "horario": "6:00 p.m. a 8:00 p.m.",
+          "urlFormulario": "https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=2eda21f4895a475da8da92e3805911bb&id=fAS9-kj_KkmLu4-YufucyizKPNzMWuNFg9CqqJGEajNURUhHOFYwOEFJMEhXME8zQTJUVTBPVUxFWC4u&topview=Preview"
+        },
+        "atencionDoc": {
+          "dias": "Lunes y viernes",
+          "horario": "6:30 a.m. a 8:00 a.m.",
+          "correo": "a.perez271@uniandes.edu.co"
+        },
+        "urlDocMatematicas": "#",
+        "taller": {
+          "fecha": "19 y 26 de septiembre",
+          "horario": "9:00 a.m. a 11:00 a.m.",
+          "salon": "O – 306",
+          "urlInscripcion": "https://evento.uniandes.edu.co/es/ciclo-2-un-reloj-no-te-da-mas-tiempo-2023-2"
+        }
       }
     }
   },
   "210621": {
     "1": {
       "fechaInicio": "04-09-2023 00:00:00",
-      "fechaFin": "25-09-2023 00:00:00",
+      "fechaFin": "08-09-2023 00:00:00",
       "cuestionarios": {
         "urlInicio": "https://bloqueneon.uniandes.edu.co/d2l/lms/quizzing/user/quiz_submissions.d2l?bp=1&isprv=&fromQB=&qi=181544&ou=210621",
         "urlFin": "https://bloqueneon.uniandes.edu.co/d2l/lms/quizzing/user/quiz_submissions.d2l?bp=1&isprv=&fromQB=&qi=179463&ou=210621"
+      },
+      "recursos": {
+        "maraton": {
+          "salon": "RGD-010",
+          "horario": "6:00 p.m. a 8:00 p.m.",
+          "urlFormulario": "https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=2eda21f4895a475da8da92e3805911bb&id=fAS9-kj_KkmLu4-YufucyizKPNzMWuNFg9CqqJGEajNURUhHOFYwOEFJMEhXME8zQTJUVTBPVUxFWC4u&topview=Preview"
+        },
+        "atencionDoc": {
+          "dias": "Lunes y viernes",
+          "horario": "6:30 a.m. a 8:00 a.m.",
+          "correo": "a.perez271@uniandes.edu.co"
+        },
+        "urlDocMatematicas": "#",
+        "taller": {
+          "fecha": "19 y 26 de septiembre",
+          "horario": "9:00 a.m. a 11:00 a.m.",
+          "salon": "O – 306",
+          "urlInscripcion": "https://evento.uniandes.edu.co/es/ciclo-2-un-reloj-no-te-da-mas-tiempo-2023-2"
+        }
       }
     },
     "2": {
-      "fechaInicio": "31-09-2023 00:00:00",
-      "fechaFin": "01-10-2023 00:00:00",
+      "fechaInicio": "08-09-2023 00:00:00",
+      "fechaFin": "11-09-2023 00:00:00",
       "cuestionarios": {
-        "urlInicio": "https://www.google.com/",
-        "urlFin": "https://uniandes.edu.co/"
+        "urlInicio": "https://bloqueneon.uniandes.edu.co/d2l/lms/quizzing/user/quiz_summary.d2l?bp=1&isprv=1&qi=181545&ou=210621",
+        "urlFin": "https://bloqueneon.uniandes.edu.co/d2l/lms/quizzing/user/quiz_summary.d2l?bp=1&isprv=1&qi=179464&ou=210621"
+      },
+      "recursos": {
+        "maraton": {
+          "salon": "RGD-010",
+          "horario": "6:00 p.m. a 8:00 p.m.",
+          "urlFormulario": "https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=2eda21f4895a475da8da92e3805911bb&id=fAS9-kj_KkmLu4-YufucyizKPNzMWuNFg9CqqJGEajNURUhHOFYwOEFJMEhXME8zQTJUVTBPVUxFWC4u&topview=Preview"
+        },
+        "atencionDoc": {
+          "dias": "Lunes y viernes",
+          "horario": "6:30 a.m. a 8:00 a.m.",
+          "correo": "a.perez271@uniandes.edu.co"
+        },
+        "urlDocMatematicas": "#",
+        "taller": {
+          "fecha": "19 y 26 de septiembre",
+          "horario": "9:00 a.m. a 11:00 a.m.",
+          "salon": "O – 306",
+          "urlInscripcion": "https://evento.uniandes.edu.co/es/ciclo-2-un-reloj-no-te-da-mas-tiempo-2023-2"
+        }
       }
     },
     "3": {
@@ -56,6 +170,25 @@
       "cuestionarios": {
         "urlInicio": "https://www.google.com/",
         "urlFin": "https://uniandes.edu.co/"
+      },
+      "recursos": {
+        "maraton": {
+          "salon": "RGD-010",
+          "horario": "6:00 p.m. a 8:00 p.m.",
+          "urlFormulario": "https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=2eda21f4895a475da8da92e3805911bb&id=fAS9-kj_KkmLu4-YufucyizKPNzMWuNFg9CqqJGEajNURUhHOFYwOEFJMEhXME8zQTJUVTBPVUxFWC4u&topview=Preview"
+        },
+        "atencionDoc": {
+          "dias": "Lunes y viernes",
+          "horario": "6:30 a.m. a 8:00 a.m.",
+          "correo": "a.perez271@uniandes.edu.co"
+        },
+        "urlDocMatematicas": "#",
+        "taller": {
+          "fecha": "19 y 26 de septiembre",
+          "horario": "9:00 a.m. a 11:00 a.m.",
+          "salon": "O – 306",
+          "urlInscripcion": "https://evento.uniandes.edu.co/es/ciclo-2-un-reloj-no-te-da-mas-tiempo-2023-2"
+        }
       }
     },
     "4": {
@@ -64,6 +197,25 @@
       "cuestionarios": {
         "urlInicio": "https://www.google.com/",
         "urlFin": "https://uniandes.edu.co/"
+      },
+      "recursos": {
+        "maraton": {
+          "salon": "RGD-010",
+          "horario": "6:00 p.m. a 8:00 p.m.",
+          "urlFormulario": "https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=2eda21f4895a475da8da92e3805911bb&id=fAS9-kj_KkmLu4-YufucyizKPNzMWuNFg9CqqJGEajNURUhHOFYwOEFJMEhXME8zQTJUVTBPVUxFWC4u&topview=Preview"
+        },
+        "atencionDoc": {
+          "dias": "Lunes y viernes",
+          "horario": "6:30 a.m. a 8:00 a.m.",
+          "correo": "a.perez271@uniandes.edu.co"
+        },
+        "urlDocMatematicas": "#",
+        "taller": {
+          "fecha": "19 y 26 de septiembre",
+          "horario": "9:00 a.m. a 11:00 a.m.",
+          "salon": "O – 306",
+          "urlInscripcion": "https://evento.uniandes.edu.co/es/ciclo-2-un-reloj-no-te-da-mas-tiempo-2023-2"
+        }
       }
     }
   }
