@@ -18,7 +18,7 @@
           "horario": "6:30 a.m. a 8:00 a.m.",
           "correo": "a.perez271@uniandes.edu.co"
         },
-        "urlDocMatematicas": "#",
+        "urlDocMatematicas": "/PDF/Matemáticas con otros.pdf",
         "taller": {
           "fecha": "19 y 26 de septiembre",
           "horario": "9:00 a.m. a 11:00 a.m.",
@@ -29,7 +29,7 @@
     },
     "2": {
       "fechaInicio": "08-09-2023 00:00:00",
-      "fechaFin": "11-09-2023 00:00:00",
+      "fechaFin": "18-09-2023 00:00:00",
       "cuestionarios": {
         "urlInicio": "https://bloqueneon.uniandes.edu.co/d2l/lms/quizzing/user/quiz_summary.d2l?bp=1&isprv=1&qi=181362&ou=210618",
         "urlFin": "https://bloqueneon.uniandes.edu.co/d2l/lms/quizzing/user/quiz_summary.d2l?bp=1&isprv=1&qi=176693&ou=210618"
@@ -38,14 +38,14 @@
         "maraton": {
           "salon": "RGD-010",
           "horario": "6:00 p.m. a 8:00 p.m.",
-          "urlFormulario": "https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=2eda21f4895a475da8da92e3805911bb&id=fAS9-kj_KkmLu4-YufucyizKPNzMWuNFg9CqqJGEajNURUhHOFYwOEFJMEhXME8zQTJUVTBPVUxFWC4u&topview=Preview"
+          "urlFormulario": "#"
         },
         "atencionDoc": {
           "dias": "Lunes y viernes",
           "horario": "6:30 a.m. a 8:00 a.m.",
           "correo": "a.perez271@uniandes.edu.co"
         },
-        "urlDocMatematicas": "#",
+        "urlDocMatematicas": "/PDF/Matemáticas con otros.pdf",
         "taller": {
           "fecha": "19 y 26 de septiembre",
           "horario": "9:00 a.m. a 11:00 a.m.",
@@ -65,14 +65,14 @@
         "maraton": {
           "salon": "RGD-010",
           "horario": "6:00 p.m. a 8:00 p.m.",
-          "urlFormulario": "https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=2eda21f4895a475da8da92e3805911bb&id=fAS9-kj_KkmLu4-YufucyizKPNzMWuNFg9CqqJGEajNURUhHOFYwOEFJMEhXME8zQTJUVTBPVUxFWC4u&topview=Preview"
+          "urlFormulario": "#"
         },
         "atencionDoc": {
           "dias": "Lunes y viernes",
           "horario": "6:30 a.m. a 8:00 a.m.",
           "correo": "a.perez271@uniandes.edu.co"
         },
-        "urlDocMatematicas": "#",
+        "urlDocMatematicas": "/PDF/Matemáticas con otros.pdf",
         "taller": {
           "fecha": "19 y 26 de septiembre",
           "horario": "9:00 a.m. a 11:00 a.m.",
@@ -92,14 +92,14 @@
         "maraton": {
           "salon": "RGD-010",
           "horario": "6:00 p.m. a 8:00 p.m.",
-          "urlFormulario": "https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=2eda21f4895a475da8da92e3805911bb&id=fAS9-kj_KkmLu4-YufucyizKPNzMWuNFg9CqqJGEajNURUhHOFYwOEFJMEhXME8zQTJUVTBPVUxFWC4u&topview=Preview"
+          "urlFormulario": "#"
         },
         "atencionDoc": {
           "dias": "Lunes y viernes",
           "horario": "6:30 a.m. a 8:00 a.m.",
           "correo": "a.perez271@uniandes.edu.co"
         },
-        "urlDocMatematicas": "#",
+        "urlDocMatematicas": "/PDF/Matemáticas con otros.pdf",
         "taller": {
           "fecha": "19 y 26 de septiembre",
           "horario": "9:00 a.m. a 11:00 a.m.",
@@ -124,11 +124,11 @@
           "urlFormulario": "https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=2eda21f4895a475da8da92e3805911bb&id=fAS9-kj_KkmLu4-YufucyizKPNzMWuNFg9CqqJGEajNURUhHOFYwOEFJMEhXME8zQTJUVTBPVUxFWC4u&topview=Preview"
         },
         "atencionDoc": {
-          "dias": "Lunes y viernes",
-          "horario": "6:30 a.m. a 8:00 a.m.",
-          "correo": "a.perez271@uniandes.edu.co"
+          "dias": "Lunes, martes y miércoles",
+          "horario": "8:00 a.m. a 9:00 a.m.",
+          "correo": "srocuts@uniandes.edu.co"
         },
-        "urlDocMatematicas": "#",
+        "urlDocMatematicas": "/PDF/Matemáticas con otros.pdf",
         "taller": {
           "fecha": "19 y 26 de septiembre",
           "horario": "9:00 a.m. a 11:00 a.m.",
@@ -139,7 +139,7 @@
     },
     "2": {
       "fechaInicio": "08-09-2023 00:00:00",
-      "fechaFin": "11-09-2023 00:00:00",
+      "fechaFin": "18-09-2023 00:00:00",
       "cuestionarios": {
         "urlInicio": "https://bloqueneon.uniandes.edu.co/d2l/lms/quizzing/user/quiz_summary.d2l?bp=1&isprv=1&qi=181545&ou=210621",
         "urlFin": "https://bloqueneon.uniandes.edu.co/d2l/lms/quizzing/user/quiz_summary.d2l?bp=1&isprv=1&qi=179464&ou=210621"
@@ -148,14 +148,14 @@
         "maraton": {
           "salon": "RGD-010",
           "horario": "6:00 p.m. a 8:00 p.m.",
-          "urlFormulario": "https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=2eda21f4895a475da8da92e3805911bb&id=fAS9-kj_KkmLu4-YufucyizKPNzMWuNFg9CqqJGEajNURUhHOFYwOEFJMEhXME8zQTJUVTBPVUxFWC4u&topview=Preview"
+          "urlFormulario": "#"
         },
         "atencionDoc": {
-          "dias": "Lunes y viernes",
-          "horario": "6:30 a.m. a 8:00 a.m.",
-          "correo": "a.perez271@uniandes.edu.co"
+          "dias": "Lunes, martes y miércoles",
+          "horario": "8:00 a.m. a 9:00 a.m.",
+          "correo": "srocuts@uniandes.edu.co"
         },
-        "urlDocMatematicas": "#",
+        "urlDocMatematicas": "/PDF/Matemáticas con otros.pdf",
         "taller": {
           "fecha": "19 y 26 de septiembre",
           "horario": "9:00 a.m. a 11:00 a.m.",
@@ -175,14 +175,14 @@
         "maraton": {
           "salon": "RGD-010",
           "horario": "6:00 p.m. a 8:00 p.m.",
-          "urlFormulario": "https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=2eda21f4895a475da8da92e3805911bb&id=fAS9-kj_KkmLu4-YufucyizKPNzMWuNFg9CqqJGEajNURUhHOFYwOEFJMEhXME8zQTJUVTBPVUxFWC4u&topview=Preview"
+          "urlFormulario": "#"
         },
         "atencionDoc": {
-          "dias": "Lunes y viernes",
-          "horario": "6:30 a.m. a 8:00 a.m.",
-          "correo": "a.perez271@uniandes.edu.co"
+          "dias": "Lunes, martes y miércoles",
+          "horario": "8:00 a.m. a 9:00 a.m.",
+          "correo": "srocuts@uniandes.edu.co"
         },
-        "urlDocMatematicas": "#",
+        "urlDocMatematicas": "/PDF/Matemáticas con otros.pdf",
         "taller": {
           "fecha": "19 y 26 de septiembre",
           "horario": "9:00 a.m. a 11:00 a.m.",
@@ -202,14 +202,14 @@
         "maraton": {
           "salon": "RGD-010",
           "horario": "6:00 p.m. a 8:00 p.m.",
-          "urlFormulario": "https://forms.office.com/Pages/DesignPageV2.aspx?subpage=design&token=2eda21f4895a475da8da92e3805911bb&id=fAS9-kj_KkmLu4-YufucyizKPNzMWuNFg9CqqJGEajNURUhHOFYwOEFJMEhXME8zQTJUVTBPVUxFWC4u&topview=Preview"
+          "urlFormulario": "#"
         },
         "atencionDoc": {
-          "dias": "Lunes y viernes",
-          "horario": "6:30 a.m. a 8:00 a.m.",
-          "correo": "a.perez271@uniandes.edu.co"
+          "dias": "Lunes, martes y miércoles",
+          "horario": "8:00 a.m. a 9:00 a.m.",
+          "correo": "srocuts@uniandes.edu.co"
         },
-        "urlDocMatematicas": "#",
+        "urlDocMatematicas": "/PDF/Matemáticas con otros.pdf",
         "taller": {
           "fecha": "19 y 26 de septiembre",
           "horario": "9:00 a.m. a 11:00 a.m.",
