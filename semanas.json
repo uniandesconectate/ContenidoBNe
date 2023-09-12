@@ -55,11 +55,11 @@
       }
     },
     "3": {
-      "fechaInicio": "01-12-2023 00:00:00",
-      "fechaFin": "01-12-2023 00:00:00",
+      "fechaInicio": "15-09-2023 12:00:00",
+      "fechaFin": "25-09-2023 18:00:00",
       "cuestionarios": {
-        "urlInicio": "https://c3Inicio",
-        "urlFin": "https://c3Fin"
+        "urlInicio": "https://bloqueneon.uniandes.edu.co/d2l/lms/quizzing/user/quiz_summary.d2l?bp=1&isprv=1&qi=181363&ou=210618",
+        "urlFin": "https://bloqueneon.uniandes.edu.co/d2l/lms/quizzing/user/quiz_summary.d2l?bp=1&isprv=1&qi=176694&ou=210618"
       },
       "recursos": {
         "maraton": {
@@ -82,11 +82,11 @@
       }
     },
     "4": {
-      "fechaInicio": "01-12-2023 00:00:00",
-      "fechaFin": "01-12-2023 00:00:00",
+      "fechaInicio": "22-09-2023 12:00:00",
+      "fechaFin": "02-10-2023 18:00:00",
       "cuestionarios": {
-        "urlInicio": "https://c4Inicio",
-        "urlFin": "https://c4Fin"
+        "urlInicio": "https://bloqueneon.uniandes.edu.co/d2l/lms/quizzing/user/quiz_summary.d2l?bp=1&isprv=1&qi=181364&ou=210618",
+        "urlFin": "https://bloqueneon.uniandes.edu.co/d2l/home/210618"
       },
       "recursos": {
         "maraton": {
@@ -139,7 +139,7 @@
     },
     "2": {
       "fechaInicio": "08-09-2023 00:00:00",
-      "fechaFin": "18-09-2023 00:00:00",
+      "fechaFin": "18-09-2023 18:00:00",
       "cuestionarios": {
         "urlInicio": "https://bloqueneon.uniandes.edu.co/d2l/lms/quizzing/user/quiz_summary.d2l?bp=1&isprv=1&qi=181545&ou=210621",
         "urlFin": "https://bloqueneon.uniandes.edu.co/d2l/lms/quizzing/user/quiz_summary.d2l?bp=1&isprv=1&qi=179464&ou=210621"
@@ -165,11 +165,11 @@
       }
     },
     "3": {
-      "fechaInicio": "31-10-2023 00:00:00",
-      "fechaFin": "01-11-2023 00:00:00",
+      "fechaInicio": "14-09-2023 00:00:00",
+      "fechaFin": "25-09-2023 18:00:00",
       "cuestionarios": {
-        "urlInicio": "https://www.google.com/",
-        "urlFin": "https://uniandes.edu.co/"
+        "urlInicio": "https://bloqueneon.uniandes.edu.co/d2l/lms/quizzing/user/quiz_summary.d2l?bp=1&isprv=1&qi=179464&ou=210621",
+        "urlFin": "https://bloqueneon.uniandes.edu.co/d2l/lms/quizzing/user/quiz_summary.d2l?bp=1&isprv=1&qi=179465&ou=210621"
       },
       "recursos": {
         "maraton": {
@@ -192,11 +192,11 @@
       }
     },
     "4": {
-      "fechaInicio": "31-12-2023 00:00:00",
-      "fechaFin": "01-01-2024 00:00:00",
+      "fechaInicio": "21-09-2023 00:00:00",
+      "fechaFin": "2-10-2023 18:00:00",
       "cuestionarios": {
-        "urlInicio": "https://www.google.com/",
-        "urlFin": "https://uniandes.edu.co/"
+        "urlInicio": "https://bloqueneon.uniandes.edu.co/d2l/lms/quizzing/user/quiz_summary.d2l?bp=1&isprv=1&qi=181547&ou=210621",
+        "urlFin": "https://bloqueneon.uniandes.edu.co/d2l/home/210621"
       },
       "recursos": {
         "maraton": {
