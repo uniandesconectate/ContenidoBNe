@@ -17,6 +17,10 @@
   --secondary-font-color: #3c3c3a;
 }
 
+* {
+  hyphens: auto;
+}
+
 body {
   font-family: var(--primary-font-family);
   font-size: var(--font-size);
