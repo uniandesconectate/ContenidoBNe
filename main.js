@@ -206,6 +206,12 @@ function changeDecaImg(sem) {
 
 // Función para mostrar los datos correspondientes al cambio en el select
 function mostrarDatos() {
+  mostrarDatosM1();
+
+  mostrarDatosM3();
+}
+
+function mostrarDatosM1() {
   const selectElement = document.getElementById("miSelect");
   const selectedId = selectElement.value;
 
@@ -278,6 +284,87 @@ function mostrarDatos() {
   }
 
   if (selectedData.P5 === "1") {
+    btnP5Tab.style.display = "list-item";
+    p5Tab.style.display = "block";
+  } else {
+    btnP5Tab.style.display = "none";
+    p5Tab.style.display = "none";
+  }
+}
+
+function mostrarDatosM3() {
+  const selectElement = document.getElementById("miSelect");
+  const selectedId = selectElement.value;
+
+  // Busca el elemento en los datos del JSON
+  const selectedData = data.find((item) => item.id === selectedId);
+
+  changeImg("1");
+  activeOnLoadButtons("1");
+  changeDecaImg("1");
+
+  // Mostrar contenido correspondiente a Decanatura
+  document.getElementById("M3Deca1").style.display = selectedData.Deca1 === "1" ? "block" : "none";
+  document.getElementById("M3Deca2").style.display = selectedData.Deca2 === "1" ? "block" : "none";
+  document.getElementById("M3Deca3").style.display = selectedData.Deca3 === "1" ? "block" : "none";
+
+  // Mostrar imagen correspondiente a Matemáticas
+  document.getElementById(`imagenM3`).src = `img/foto${selectedData.Imagen}.svg`;
+
+  // Mostrar contenido correspondiente a P1 y P2
+  document.getElementById("M3P1").style.display = selectedData.P1 === "1" ? "block" : "none";
+  document.getElementById("M3P2").style.display = selectedData.P2 === "1" ? "block" : "none";
+  document.getElementById("M3P3").style.display = selectedData.P3 === "1" ? "block" : "none";
+  document.getElementById("M3P4").style.display = selectedData.P4 === "1" ? "block" : "none";
+  document.getElementById("M3P5").style.display = selectedData.P5 === "1" ? "block" : "none";
+
+  // Mostrar/ocultar los botones de las pestañas según el estado de P1 y P2
+  let btnP1Tab = document.getElementById("navItemM3P1");
+  let btnP2Tab = document.getElementById("navItemM3P2");
+  let btnP3Tab = document.getElementById("navItemM3P3");
+  let btnP4Tab = document.getElementById("navItemM3P4");
+  let btnP5Tab = document.getElementById("navItemM3P5");
+
+  // Mostrar/ocultar las pestañas según el estado de P1 y P2
+  let p1Tab = document.getElementById("m3p1-tab");
+  let p2Tab = document.getElementById("m3p2-tab");
+  let p3Tab = document.getElementById("m3p3-tab");
+  let p4Tab = document.getElementById("m3p4-tab");
+  let p5Tab = document.getElementById("m3p5-tab");
+
+  if (selectedData.M3P1 === "1") {
+    btnP1Tab.style.display = "list-item";
+    p1Tab.style.display = "block";
+  } else {
+    btnP1Tab.style.display = "none";
+    p1Tab.style.display = "none";
+  }
+
+  if (selectedData.M3P2 === "1") {
+    btnP2Tab.style.display = "list-item";
+    p2Tab.style.display = "block";
+  } else {
+    btnP2Tab.style.display = "none";
+    p2Tab.style.display = "none";
+  }
+
+  if (selectedData.M3P3 === "1") {
+    btnP3Tab.style.display = "list-item";
+    p3Tab.style.display = "block";
+  } else {
+    btnP3Tab.style.display = "none";
+    p3Tab.style.display = "none";
+  }
+
+  if (selectedData.M3P4 === "1") {
+    btnP4Tab.style.display = "list-item";
+    p4Tab.style.display = "block";
+  } else {
+    btnP4Tab.style.display = "none";
+    p4Tab.style.display = "none";
+  }
+
+  if (selectedData.M3P5 === "1") {
     btnP5Tab.style.display = "list-item";
     p5Tab.style.display = "block";
   } else {
