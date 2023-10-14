@@ -309,14 +309,14 @@ function mostrarDatosM3() {
   document.getElementById("M3Deca3").style.display = selectedData.Deca3 === "1" ? "block" : "none";
 
   // Mostrar imagen correspondiente a Matemáticas
-  document.getElementById(`imagenM3`).src = `img/foto${selectedData.Imagen}.svg`;
+  document.getElementById(`imagenM3`).src = `img/foto${selectedData.M3Imagen}.svg`;
 
   // Mostrar contenido correspondiente a P1 y P2
-  document.getElementById("M3P1").style.display = selectedData.P1 === "1" ? "block" : "none";
-  document.getElementById("M3P2").style.display = selectedData.P2 === "1" ? "block" : "none";
-  document.getElementById("M3P3").style.display = selectedData.P3 === "1" ? "block" : "none";
-  document.getElementById("M3P4").style.display = selectedData.P4 === "1" ? "block" : "none";
-  document.getElementById("M3P5").style.display = selectedData.P5 === "1" ? "block" : "none";
+  document.getElementById("M3P1").style.display = selectedData.M3P1 === "1" ? "block" : "none";
+  document.getElementById("M3P2").style.display = selectedData.M3P2 === "1" ? "block" : "none";
+  document.getElementById("M3P3").style.display = selectedData.M3P3 === "1" ? "block" : "none";
+  document.getElementById("M3P4").style.display = selectedData.M3P4 === "1" ? "block" : "none";
+  document.getElementById("M3P5").style.display = selectedData.M3P5 === "1" ? "block" : "none";
 
   // Mostrar/ocultar los botones de las pestañas según el estado de P1 y P2
   let btnP1Tab = document.getElementById("navItemM3P1");
